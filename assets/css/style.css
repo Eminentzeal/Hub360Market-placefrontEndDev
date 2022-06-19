@@ -58,6 +58,14 @@ ul {
   font-weight: 500;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   font-size: 0.8rem;
   font-weight: 700;
@@ -316,5 +324,6 @@ hr {
 .footer .second_footer {
   background: var(--black);
 }
+
 
 
