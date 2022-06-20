@@ -325,5 +325,12 @@ hr {
   background: var(--black);
 }
 
+.footer .third_footer ul {
+  padding-left: 0;
+}
+
+.footer .third_footer ul li a{
+  color: var(--white);
+}
 
 
