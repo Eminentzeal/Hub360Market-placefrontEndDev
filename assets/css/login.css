@@ -1,0 +1,75 @@
+.registration {
+  width: 70%;
+}
+
+.registration .bg-img {
+  background: url(/assets/img/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.registration .bg-img .bg-overlay {
+  background-color: rgb(81 81 81 / 28%);
+  height: 100%;
+}
+
+.registration .title {
+  padding: 15rem 2rem;
+  color: var(--white);
+}
+
+.registration .title p {
+  font-size: 14px;
+}
+.form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.form .form-control,
+.form .form-select  {
+  color: var(--black);
+  border: 1px solid var(--border);
+  font-size: 14px;
+  box-shadow: none;
+}
+
+
+
+.reg-btn {
+  background: var(--primary);
+}
+
+.reg-btn:hover {
+  background: var(--black);
+}
+
+.fb-btn {
+  background: #1878f2;
+}
+
+.goo-btn {
+  background: #e13f2a;
+}
+
+.social-btn p,
+.acc-exist p,
+.form .form-check label,
+.forgot-password {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.acc-exist a,
+.forgot-password a {
+  color: var(--primary);
+}
+
+
+@media only screen and (max-width: 991px) {
+  body > section > div > div.col.p-5.bg-white > div > p{
+    font-size: 12px;
+  }
+}
