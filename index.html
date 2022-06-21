@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-   <!-- Bootstrap CSS -->
-   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-   <!-- main CSS -->
-   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
    <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -43,11 +42,16 @@
           <h5>Get 30% Off On Selected Items</h5>
         </div>
         <div>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href=""></a>My Account
-            </li>
-          </ul>
+          <div class="btn-group">
+            <button type="button" class="">My Account</button>
+            <button type="button" class="dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Signin</a></li>
+              <li><a class="dropdown-item" href="registeration.html">Register</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr>
@@ -63,9 +67,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Account</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -89,13 +90,15 @@
       <div class="row">
         <div class="col-lg-3 categories p-0 bg-white">
           <div class="head px-4 py-3">
-            <i id="menu-btn" onclick="openmenu()" class='bx bx-menu' style="color:#fff"></i>
-            <i id="close-btn" onclick="closemenu()" class='bx bx-x' style="color:#fff"></i>
+            <i id="menu-btn" onclick="openmenu()" class='bx bx-menu d-lg-none' style="color:#fff"></i>
+            <i id="close-btn" onclick="closemenu()" class='bx bx-x d-lg-none' style="color:#fff"></i>
             <span>All category</span>
           </div>
-
-          <div class="body" id="side-menu">
-            <ul>
+          <!-- d-lg-none -->
+          
+          <!-- d-none d-lg-block -->
+          <div class="body" id="side-submenu">
+            <ul class="">
               <li class="mt-3">On Sale<i class='bx bx-chevron-down'></i>
                 <ul>
                   <li>sub Menu 1</li>
@@ -819,6 +822,29 @@
 
       <div class="second_footer py-3 d-none d-md-block">
         <div class="container">
+          <!-- <div class="owl-carousel" id="partnerSlider">
+            <div class="item">
+              <img src="assets/img/footer/logo1.png" width="50" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/footer/logo1.png" width="50" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/footer/logo1.png" width="50" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/footer/logo1.png" width="50" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/footer/logo1.png" width="50" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/footer/logo1.png" width="50" alt="">
+            </div>
+
+          </div>   -->
+
+
           <div class="row text-center">
             <div class="col-lg-3 col-md-6 col-12 ">
               <img src="assets/img/footer/logo1.png" width="100" alt="">
@@ -940,6 +966,7 @@
           </div>
         </div>
       </div>
+    </div>  
   </footer>
   
    <!-- Bootstrap Bundle with Popper -->
@@ -957,8 +984,6 @@
         nav:true,
         
         dots:false,
-        autoplay:false,
-        autoplayTimeout:2000,
         autoplayHoverPause:true,
         responsive:{
             0:{
@@ -974,6 +999,30 @@
             1000:{
                 items:5,
                 nav:true
+            }
+        }
+      })
+
+      $('#partnerSlider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots:false,
+        autoplay:false,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1,
+                autoplay:true
+            },
+            600:{
+                items:3,
+
+            },
+            1000:{
+                items:6,
+
             }
         }
       })

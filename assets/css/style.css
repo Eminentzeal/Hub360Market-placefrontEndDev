@@ -5,6 +5,7 @@
   --yellow: #ffc107;
   --black: #000;
   --body: #f5f6f9;
+  --border: #eee;
   
   --transition: 0.3s ease;
 }
@@ -78,6 +79,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: none;
 }
 
 button:hover {
@@ -123,6 +125,18 @@ hr {
   color: var(--primary);
 } 
 
+.navbar .btn-group button {
+  background: var(--white);
+}
+
+.navbar .btn-group button {
+  color: var(--black);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar i {
   font-size: 1.2rem;
   padding: 3px 7px 0 7px;
@@ -142,6 +156,10 @@ hr {
 
 #bar:hover,
 #bar:active {
+  color: var(--white);
+}
+
+body > header > nav > button {
   color: var(--white);
 }
 
@@ -180,24 +198,25 @@ hr {
 }
 
 /* ====== Side Menu ====== */
-/* .side-menu .row>* {
-  padding: 0;
-} */
 
 .side-menu .categories {
-  /* border: 1px solid black; */
+  
   border-radius: 5px 5px 0px 0px;
-  /* background-color: var(--white); */
 }
 
 .side-menu .categories .head{
-  /* border: 1px solid black; */
+ 
   border-radius: 5px 5px 0 0;
   background-color: var(--primary);
   color: var(--white);
   font-weight: 800;
   text-transform: uppercase;
 }
+
+/* .side-menu .categories .head #close-btn,
+.side-menu .categories .head #menu-btn {
+  display: none;
+} */
 
 .side-menu .categories ul li {
   list-style-type: none;
@@ -231,6 +250,19 @@ hr {
   margin-right: 8px;
   float: right;
 }
+
+@media only screen and (max-width: 991px) {
+  .side-menu .categories .head #close-btn {
+    display: none;
+  }
+
+  #side-submenu {
+    display: none;
+  }
+
+}
+
+
 /* ====== Home carousel ====== */
 
 
