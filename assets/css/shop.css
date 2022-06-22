@@ -1,0 +1,22 @@
+.featured h2 {
+  font-weight: bold;
+}
+.featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a {
+  background: var(--primary);
+}
+
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n) > a {
+  box-shadow: none;
+  color: var(--black);
+}
+
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n) > a:hover {
+  color: var(--white);
+}
+
+.featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover > a {
+  background-color: goldenrod;
+  color: var(--white);
+  box-shadow: none;
+}
+
