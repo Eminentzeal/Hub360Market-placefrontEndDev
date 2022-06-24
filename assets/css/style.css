@@ -4,8 +4,11 @@
   --white: #fff;
   --yellow: #ffc107;
   --black: #000;
-  --body: #f5f6f9;
+  --body: #121214;
   --border: #eee;
+  --dropdown-box-shadow: 0 8px 8px -4px var(--primary);
+  --dropdown: #555555;
+
   
   --transition: 0.3s ease;
 }
@@ -124,12 +127,38 @@ hr {
   color: var(--primary);
 } 
 
-.navbar .btn-group button {
+.navbar .dropdown button {
   background: var(--white);
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
 }
 
-.navbar .btn-group button {
-  color: var(--black);
+#dropdownMenuButton > i {
+  font-size: 12px;
+}
+
+.navbar .dropdown button:hover {
+  color: var(--primary);
+}
+
+.first-nav > div.dropdown.show > div {
+  box-shadow: var(--dropdown-box-shadow);
+  outline: none;
+  border: none;
+}
+
+.first-nav > div.dropdown.show > div > a {
+  font-weight: 500;
+  font-size: 12px;
+  background: transparent;
+  color: var(--dropdown);
+}
+
+.first-nav > div.dropdown.show > div > a:nth-child(n):hover {
+  /* background-color: var(--primary); */
+  color: var(--secondary);
 }
 
 .navbar-toggler:focus {
@@ -160,6 +189,72 @@ hr {
 
 body > header > nav > button {
   color: var(--white);
+}
+
+.search-container {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.search-bar {
+  max-width: 800px;
+  display: flex;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.search-bar li:hover  {
+  color: var(--secondary);
+}
+
+.search-bar input {
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.search-bar i:hover {
+  color: var(--primary);
+}
+
+#select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px 0 30px;
+  cursor: pointer;
+  position: relative;
+  border-right: 1px solid var(--border);
+}
+
+#select ul {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: var(--white);
+  color: #555;
+  width: 100%;
+  border-radius: 4px;
+  z-index: 2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  box-shadow: var(--dropdown-box-shadow);
+}
+
+#select li {
+  padding: 10px 20px;
+}
+
+#select ul.open {
+  max-height: 300px;
+}
+
+#select > i {
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -268,6 +363,7 @@ body > header > nav > button {
 /* ====== Services ====== */
 .services .service {
   border-radius: 5px;
+  height: 100%;
 }
 
 .services .service h4,
