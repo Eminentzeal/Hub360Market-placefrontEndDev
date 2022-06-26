@@ -273,12 +273,15 @@ body > header > nav > button {
 }
 
 .side-menu .categories .head{
- 
   border-radius: 5px 5px 0 0;
   background-color: var(--primary);
   color: var(--white);
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.side-menu .categories .body {
+  height: 88%;
 }
 
 .side-menu .categories ul li {
@@ -294,7 +297,12 @@ body > header > nav > button {
   display: none;
   z-index: 10;
   top: 12.8rem;
-  border: 1px solid gray;  
+  box-shadow: var(--dropdown-box-shadow);  
+  font-size: 12px;
+}
+
+.side-menu .categories ul li ul li {
+  padding: 5px 0 5px;
 }
 
 .side-menu .categories ul li:hover ul {
@@ -318,8 +326,6 @@ body > header > nav > button {
   float: right;
 }
 
-/* ====== Home carousel ====== */
-
 
 /* ====== Services ====== */
 .services .service {
@@ -332,20 +338,33 @@ body > header > nav > button {
   font-size: 14px;
 }
 
-#home {
-  background-size: cover;
-  background-position: top center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;align-items: flex-start;
+/*====== Top Product and Top Category ====== */
+
+.owl-carousel img{
+  height: 20vh;
 }
 
-#home span {
-  color: var(--primary);
+.owl-carousel .product_thumb {
+  background: var(--white);
+  padding: 15px 10px 12px 10px;
+  width: 110%;
 }
+
+.owl-carousel .product_thumb:hover {
+  opacity: 0.7;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+
+.owl-carousel .product_thumb p {
+  text-transform: none !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 
 /*====== Featured ====== */
-
 .product{
   cursor: pointer;
   margin-bottom: 2rem;  
@@ -364,10 +383,6 @@ body > header > nav > button {
 
 .product:hover img {
   opacity: 0.7;
-  /* width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  object-fit: cover; */
 }
 
 .product .buy-btn {
@@ -415,24 +430,9 @@ body > header > nav > button {
 
 /* ====== Owl Carousel ====== */
 
-.owl-carousel .product_thumb {
-  padding: 15px 10px 12px 10px;
-}
-/* .owl-carousel .top_thumb {
-  padding: 35px 10px 5px 10px !important;    border: 1px solid #fff;
-  position: relative;
-} */
 
-.owl-carousel .owl-item img {
-  display: block;
-  width: 10%;
-}
 
-/* .top_categories {
-  position: relative;
-} */
-
-body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-prev,
+/* body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-prev,
 body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-next {
   background: var(--body);
   height: 20px;
@@ -440,9 +440,9 @@ body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-lo
   border-radius: 50%;
   position: absolute;
   top: -18%;
-}
+} */
 
-body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-prev:hover,
+/* body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-prev:hover,
 body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-next:hover {
   color: var(--primary);
   font-size: 20px;
@@ -454,8 +454,7 @@ body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-lo
 
 body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl-next {
   right: 0px;
-  /* transform: translate(-50%, -50%); */
-}
+} */
 
 .footer a {
   color: var(--white);
@@ -526,6 +525,11 @@ body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-lo
   font-size: 12px;
 }
 
+/* .side-menu .categories {
+  padding: 1rem !important;
+  background: var(--white);
+} */
+
 @media only screen and (max-width: 991px) {
   body > header > nav > div > button:hover,
   body > header > nav > div > button:focus {
@@ -550,6 +554,11 @@ body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-lo
     padding: 10px 0;
   }
 
+  /* .side-menu .categories {
+    padding: 0 !important;
+    background: transparent;
+  } */
+
   .side-menu .categories .head #close-btn {
     display: none;
   }
@@ -562,6 +571,16 @@ body > header > section.top_categories > div > div.owl-carousel.owl-theme.owl-lo
   .product .product-img-wrap img {
     width: 30vw;
     height: 30vw;
+}
+
+.owl-carousel img{
+  height: 40vh;
+}
+
+.owl-carousel .product_thumb {
+  background: var(--white);
+  padding: 15px 10px 12px 10px;
+  width: 100%;
 }
 
 }
