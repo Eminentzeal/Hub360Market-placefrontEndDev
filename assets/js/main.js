@@ -55,3 +55,10 @@ smallImg[2].onclick = function() {
 smallImg[3].onclick = function() {
   mainImg.src = smallImg[3].src;
 }
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

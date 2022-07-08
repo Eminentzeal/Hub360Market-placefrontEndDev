@@ -4,13 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-  <!-- main CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
+ 
    <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon">
 
@@ -20,11 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
 
-  <!-- Box Icon-->
+  <!-- Vendor CSS Files-->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Bootstrap Icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -119,7 +114,7 @@
             <span>All category</span>
           </div>
    
-          <div class="body bg-white" id="side-submenu">
+          <div class="body" id="side-submenu">
             <ul class="d-ul pl-0">
               <li class="d-li pt-3">Accessories<i class='bx bx-chevron-down'></i>
                 <ul>
@@ -268,7 +263,37 @@
         </div> -->
       </div>
     </section>
-    
+
+    <!-- ====== Top Categories ====== -->
+    <section class="top_categories container mt-5">
+      <div class="row">
+        <div class="col-sm-4 col-12 py-2 py-md-0">
+          <div class="banner">
+            <a href="#">
+              <img src="assets/img/top-cat/1.png" class="rounded float-left img-fluid" alt="banner-1">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12 py-2 py-md-0">
+          <div class="banner">
+            <a href="#">
+              <img src="assets/img/top-cat/2.png" class="rounded float-left img-fluid" alt="banner-1">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12 py-2 py-md-0">
+          <div class="banner">
+            <a href="#">
+              <img src="assets/img/top-cat/3.png" class="rounded float-left img-fluid" alt="banner-1">
+            </a>
+          </div>
+        </div>
+      </div>
+       
+          
+       
+    </section>
+
     <!-- ====== Top Product ====== -->
     <section class="top_product">
       <div class="container mt-5">
@@ -406,33 +431,7 @@
       </div>
     </section>
 
-     <!-- ====== Main Banner ====== -->
-     <section class="main_banner container mt-5">
-      <div class="row">
-        <div class="col-sm-4 col-12 py-2 py-md-0">
-          <div class="banner">
-            <a href="#">
-              <img src="assets/img/banner/banner-1.jpg" class="rounded float-left img-fluid" alt="banner-1">
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-4 col-12 py-2 py-md-0">
-          <div class="banner">
-            <a href="#">
-              <img src="assets/img/banner/banner-2.jpg" class="rounded  img-fluid" alt="banner-2">
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-4 col-12 py-2 py-md-0">
-          <div class="banner">
-            <a href="#">
-              <img src="assets/img/banner/banner-3.jpg" class="rounded float-right img-fluid" alt="banner-3">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
+
     <!-- ====== Featured ====== -->
     <section id="featured" class="mt-5">
       <div class="container text-center mt-5 pb-2 ">
@@ -447,7 +446,6 @@
             <div class="product-img-wrap pt-4" >
               <img class="img-fluid mb-3" src="assets/img/featured/oscilloscope.jpg" alt="">
             </div>
-            
             <div class="product-content-wrap">
               <div class="star">
                 <i class='bx bxs-star'></i>
@@ -458,7 +456,41 @@
               </div>
               <h5 class="p-name">Sport Boots</h5>
               <h4 class="p-price">$700.00</h4>
-              <button class="buy-btn">Buy Now</button>
+              
+              <div class="button-grp">              
+                <i class="bi bi-cart-plus p-2 rounded fw-5"></i>
+                <i class="bi bi-heart p-2 rounded"></i>
+                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              </div>
+
+              <!-- <div class="button-group">
+                <a href="#" class="symbol" data-toggle="modal" data-target="#cart_model"></a>
+
+                <a href="#" class="symbol" data-toggle="modal" data-target="#compare_model"></a>
+
+                <a href="#" class="symbol" data-toggle="modal" data-target="#eye_model"></a>
+
+                <a href="#" class="symbol" data-toggle="modal" data-target="#heart_model"></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
             </div>
           </div>
         </div>
@@ -538,141 +570,7 @@
       </div>
     </div>
 
-    <!-- ====== Top Categories ====== -->
-    <section class="top_categories">
-      <div class="container my-3">
-        <div class="row">
-          <div class="col-12">
-            <div class="title_outer">
-              <h4 class="font-weight-bolder mb-4 d-inline-block pe-3"><span class="text-danger">Top</span> Categories</h4>
-            </div> <!-- title_outer -->
-          </div> <!-- col-12 -->
-        </div>
-        
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/1-3-1-427x419.jpg" class=" mx-auto d-block " alt="product_1">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Capacitors</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/10k1-1-427x500.jpg" class=" mx-auto d-block " alt="product_2">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Transistors</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/166-1-427x546.jpg" class=" mx-auto d-block " alt="product_3">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Temperature</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/193-1-427x375.jpg" class=" mx-auto d-block " alt="product_4">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Pressure</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/esp32-cam-board.jpg" class=" mx-auto d-block " alt="product_5">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Pressure</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/113-1.jpg" class=" mx-auto d-block " alt="product_6">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Pressure</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/DSO150.jpg" class=" mx-auto d-block " alt="product_7">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Pressure</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="col-12">
-              <div class="product_thumb rounded">
-                <div class="cat_effect">
-                  <div class="pro_image">
-                    <img src="assets/img/featured/screw-terminal-1-300x300.jpg" class=" mx-auto d-block " alt="product_8">
-                  </div>							
-                  <div class="main_text">									
-                    <p class="text-center pro-heading my-2 px-2 text-uppercase">Pressure</p>		
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
+   
 
     <!-- ====== ban ====== -->
     <section class="ban">
@@ -851,11 +749,14 @@
   </footer>
   
   
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
 
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

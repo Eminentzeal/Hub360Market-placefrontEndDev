@@ -23,7 +23,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  background-color: var(--white);
+  background-color: var(--body);
 }
 
 /* section {
@@ -73,7 +73,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   font-size: 0.8rem;
   font-weight: 700;
   outline: none;
@@ -88,7 +88,7 @@ button {
   box-shadow: none;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--secondary);
 }
 
@@ -271,7 +271,6 @@ body > header > nav > button {
 /* ====== Side Menu ====== */
 
 .side-menu .categories {
-  
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -285,6 +284,7 @@ body > header > nav > button {
 
 .side-menu .categories .body {
   height: 88%;
+  
 }
 
 #side-submenu > ul:nth-child(1) {
@@ -298,7 +298,7 @@ body > header > nav > button {
 }
 
 .side-menu .categories .d-ul {
-  background: var(--body);
+  background: var(--white);
 }
 
 
@@ -379,6 +379,11 @@ body > header > nav > button {
   font-weight: 600;
 }
 
+/*====== Top Categories ====== */
+.top_categories .banner:hover {
+  transform: perspective(10px)
+} 
+
 /*====== Featured ====== */
 .product{
   cursor: pointer;
@@ -404,17 +409,24 @@ body > header > nav > button {
   opacity: 0.7;
 }
 
-.product .buy-btn {
-  background: var(--secondary);
-  transform: translateY(20px);
+.product .button-grp {
+  transform: translateY(0px);
   opacity: 0;
   transition: 0.3s all;
 }
 
-.product:hover .buy-btn {
- 
-  transform: translateY(0px);
+.product:hover .button-grp {
+  transform: translateY(-150px);
   opacity: 1;
+}
+
+.product .button-grp i {
+  font-weight: 700;
+  background: var(--body);
+}
+
+.product .button-grp i:hover {
+  background: var(--secondary);
 }
 
 .pro-heading, .p-name {
