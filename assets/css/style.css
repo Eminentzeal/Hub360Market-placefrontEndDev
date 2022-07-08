@@ -1,7 +1,5 @@
 :root {
-  --secondary: #fb8500
-
-  ;
+  --secondary: #fb8500;
   --primary: #1cacd9;
   --white: #fff;
   --yellow: #ffc107;
@@ -9,9 +7,7 @@
   --body: #f6f6f6;
   --border: #eee;
   --dropdown-box-shadow: 0 8px 8px -4px var(--primary);
-  --dropdown: #555555;
-
-  
+  --dropdown: #555555;  
   --transition: 0.3s ease;
 }
 
@@ -25,11 +21,6 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: var(--body);
 }
-
-/* section {
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
 
 h1 {
   font-size: 2.5rem;
@@ -78,18 +69,37 @@ a {
   font-weight: 700;
   outline: none;
   border: none;
-  border-radius: 10px;
-  /* background-color: var(--black); */
+  border-radius: 5px;
+  background: var(--secondary);
   color: var(--white);
   padding: 10px 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: none;
+}
+
+.close-button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: red;
+  color: var(--white);
+  padding: 10px 30px;
+  /* text-transform: uppercase; */
   cursor: pointer;
   transition: var(--transition);
   box-shadow: none;
 }
 
 .button:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
+}
+
+.close-button:hover {
+  background: rgba(255, 0, 0, 0.457);
 }
 
 hr {
@@ -412,7 +422,7 @@ body > header > nav > button {
 .product .button-grp {
   transform: translateY(0px);
   opacity: 0;
-  transition: 0.3s all;
+  transition: 0.5s all;
 }
 
 .product:hover .button-grp {

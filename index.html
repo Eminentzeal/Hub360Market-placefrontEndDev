@@ -459,24 +459,86 @@
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
               </div>
-              <h5 class="p-name">Sport Boots</h5>
-              <h4 class="p-price">$700.00</h4>
+              <h4 class="p-name px-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
+              <span class="p-price">$700.00</span>
               
               <div class="button-grp">              
-                <i class="bi bi-cart-plus p-2 rounded fw-5"></i>
-                <i class="bi bi-heart p-2 rounded"></i>
-                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                <i class="bi bi-cart-plus p-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
+                
+                <i class="bi bi-eye p-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
+
+                <i class="bi bi-heart p-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!--Add to cart Modal -->
+        <div class="modal fade" id="addtocart" tabindex="-1" aria-labelledby="addtocartLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h4 class="modal-title" id="addtocartLabel">Product successfully added to your shopping cart</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card border-0">
+                      <img src="assets/img/featured/oscilloscope.jpg" class="card-img-top" alt="...">
+                      
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
+                        <span class="card-text">$700</span>
+                        <br>
+                        <span class="card-text">Quantity: 1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 py-3">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="card-title">Subtotal</h5>
+                          <span class="card-text">$700</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="card-title">Shipping</h5>
+                          <span class="card-text">$10.5</span>
+                        </div>
+                        <hr class="divider">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="card-title">Total</h5>
+                          <span class="card-text">$710.5</span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="close-button" data-bs-dismiss="modal">Close</button>
+
+                <button type="button" class="button">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Product Quickview Modal -->
+        <div class="modal fade" id="quickview" tabindex="-1" aria-labelledby="quickviewLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="quickviewLabel">Quick view</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -489,6 +551,26 @@
             </div>
           </div>
         </div>
+
+        <!--Wishlist Modal -->
+        <div class="modal fade" id="wishlist" tabindex="-1" aria-labelledby="wishlistLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="wishlistLabel">Add to cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="product text-center col-lg-3 col-md-6 col-12">
           <div class="bg-white border rounded">
@@ -509,7 +591,7 @@
               <div class="button-grp">              
                 <i class="bi bi-cart-plus p-2 rounded fw-5"></i>
                 <i class="bi bi-heart p-2 rounded"></i>
-                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
               </div>
             </div>
           </div>
@@ -534,7 +616,7 @@
               <div class="button-grp">              
                 <i class="bi bi-cart-plus p-2 rounded fw-5"></i>
                 <i class="bi bi-heart p-2 rounded"></i>
-                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
               </div>
             </div>
           </div>
@@ -559,7 +641,7 @@
               <div class="button-grp">              
                 <i class="bi bi-cart-plus p-2 rounded fw-5"></i>
                 <i class="bi bi-heart p-2 rounded"></i>
-                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                <i class="bi bi-eye p-2 rounded"  type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
               </div>
             </div>
           </div>
