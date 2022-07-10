@@ -1,0 +1,19 @@
+.wishlist .row {
+  background: #fff;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.wishlist i {
+  color: var(--black);
+}
+
+.wishlist h5 {
+  font-weight: 600;
+}
+
+.wishlist a {
+  color: var(--black);
+}

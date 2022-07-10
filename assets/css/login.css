@@ -36,13 +36,13 @@
   box-shadow: none;
 }
 
-.reg-btn {
+/* .reg-btn {
   background: var(--primary);
 }
 
 .reg-btn:hover {
   background: var(--black);
-}
+} */
 
 .fb-btn {
   background: #1878f2;
