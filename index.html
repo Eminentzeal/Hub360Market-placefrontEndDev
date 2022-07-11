@@ -20,7 +20,6 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
-
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -134,19 +133,18 @@
    
           <div class="body" id="side-submenu">
             <ul class="d-ul pl-0">
-              <li class="d-li pt-3">Accessories<i class='bx bx-chevron-down'></i>
+              <li class="d-li p-3">Electricals<i class='bx bx-chevron-down'></i>
                 <ul>
+                  <li>Accessories</li>
+                  <li>Board</li>
+                  <li>Resistors</li>
+                  <li>Sensors</li>
                   <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
-                  <li>sub Menu 1</li>
+                  <li>IC's</li>
+                  <li>Other Sensors</li>
                 </ul>
               </li>
-              <li class="d-li pt-3">Modules<i class='bx bx-chevron-down'></i>
+              <li class="d-li p-3">Home Appliances<i class='bx bx-chevron-down'></i>
                 <ul>
                   <li>20w hot glue stick</li>
                   <li>Male-male jumper wire (single)</li>
@@ -154,49 +152,13 @@
                   <li>Male-female jumper wire (set)
                   </li>
                 </ul>
-              </li><li class="d-li pt-3">Board<i class='bx bx-chevron-down'></i>
+              </li><li class="d-li p-3">Electronics<i class='bx bx-chevron-down'></i>
                 <ul>
                   <li>sub Menu 3</li>
                   <li>sub Menu 3</li>
                   <li>sub Menu 3</li>
                   <li>sub Menu 3</li>
                   <li>sub Menu 3</li>
-                </ul>
-              </li>
-              </li><li class="d-li pt-3">Resistors<i class='bx bx-chevron-down'></i>
-                <ul>
-                  <li>sub Menu 4</li>
-                  <li>sub Menu 4</li>
-                  <li>sub Menu 4</li>
-                  <li>sub Menu 4</li>
-                  <li>sub Menu 4</li>
-                </ul>
-              </li>
-              </li><li class="d-li pt-3">Sensors<i class='bx bx-chevron-down'></i>
-                <ul>
-                  <li>sub Menu 5</li>
-                  <li>sub Menu 5</li>
-                  <li>sub Menu 5</li>
-                  <li>sub Menu 5</li>
-                  <li>sub Menu 5</li>
-                </ul>
-              </li>
-              </li><li class="d-li pt-3">IC's<i class='bx bx-chevron-down'></i>
-                <ul>
-                  <li>sub Menu 6</li>
-                  <li>sub Menu 6</li>
-                  <li>sub Menu 6</li>
-                  <li>sub Menu 6</li>
-                  <li>sub Menu 6</li>
-                </ul>
-              </li>
-              </li><li class="d-li pt-3 pb-3">Other Sensors<i class='bx bx-chevron-down'></i>
-                <ul>
-                  <li>sub Menu 7</li>
-                  <li>sub Menu 7</li>
-                  <li>sub Menu 7</li>
-                  <li>sub Menu 7</li>
-                  <li>sub Menu 7</li>
                 </ul>
               </li>
             </ul>
@@ -642,6 +604,7 @@
           </div>
         </div>
 
+
         <!--Featured Add to cart Modal -->
         <div class="modal fade" id="featuredAddtocart" tabindex="-1" aria-labelledby="featuredAddtocartLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
@@ -700,10 +663,11 @@
         </div>
 
         <!--Featured Product Quickview Modal -->
-        <div class="modal fade" id="featuredQuickview" tabindex="-1" aria-labelledby="featuredQuickviewLabel" aria-hidden="true">
+        <div class="modal fade" id="featuredQuickview" aria-hidden="true" aria-labelledby="featuredQuickviewLabel" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
+                
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -720,7 +684,12 @@
                         <h5 class="card-text price my-3">$700</h5>
                         <p class="card-text my-3 description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
                       </div>
-                      <button type="button" class="button">Add to cart</button>
+                      <div class="d-block my-3" role="group">
+                        <button type="button" class="button count-btn"><i class="bi bi-plus-lg"></i></button>
+                        <input class="rounded border-0 text-center" type="number" value="1" id="">
+                        <button type="button" class="button count-btn"><i class="bi bi-dash-lg"></i></button>
+                      </div>
+                      <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#featuredQuickviewSuccess">Add to cart</button>
                     </div>
                   </div>
                 </div>
@@ -728,6 +697,22 @@
             </div>
           </div>
         </div>
+        <div class="modal fade" id="featuredQuickviewSuccess" aria-hidden="true" aria-labelledby="featuredQuickviewSuccessLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header justify-content-evenly border-0">
+                <svg xmlns="http://www.w3.org//svg" width="40" height="40" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+              </div>
+              <div class="modal-body text-center">
+                <h4 class="pb-2">Product added successfully</h4>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
 
         <!--Featured Wishlist Modal -->
         <div class="modal fade" id="featuredWishlist" tabindex="-1" aria-labelledby="featuredWishlistLabel" aria-hidden="true">
@@ -739,7 +724,7 @@
               <div class="modal-body text-center">
                 <span class=""><i class="bi bi-box-arrow-in-right"></i></span>
                 
-                <h5 class="mt-4 mb-3">You Must Be Logged In To Manage Your Wishlist.</h5>
+                <h4 class="my-4">You Must Be Logged In To Manage Your Wishlist.</h5>
                 <a class="mb-4" href="login.html">Login</a>
               </div>
             </div>

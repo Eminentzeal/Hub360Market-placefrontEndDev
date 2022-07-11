@@ -2,12 +2,10 @@
   background: #fff;
   padding-top: 15px;
   padding-bottom: 13px;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
 }
 
-.wishlist i {
-  color: var(--black);
+.wishlist i:hover {
+  color: var(--secondary);
 }
 
 .wishlist h5 {
@@ -16,4 +14,8 @@
 
 .wishlist a {
   color: var(--black);
+}
+
+.wishlist a:hover {
+  color: var(--secondary);
 }
