@@ -365,12 +365,13 @@ body > header > nav > button {
 
 #side-submenu > ul:nth-child(1) {
   padding-left: 0 !important;
-  /* height: 17rem; */
+  height: 25rem;
 }
 
 .side-menu .categories ul li {
   list-style-type: none;
   cursor: pointer;
+  color: var(--black);
 }
 
 .side-menu .categories .d-ul {
@@ -416,9 +417,10 @@ body > header > nav > button {
 }
 
 @media only screen and (max-width: 991px) {
-  /* #side-submenu > ul:nth-child(1) {
-    height: 8rem;
-  } */
+  #side-submenu > ul:nth-child(1) {
+    padding-left: 0 !important;
+    height: 11rem;
+  }
 }
 
 
