@@ -1,0 +1,36 @@
+.cart_items .row {
+  background: #fff;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.cart_items i:hover {
+  color: var(--secondary);
+}
+
+.cart_items h5 {
+  font-weight: 600;
+}
+
+.cart_items a {
+  color: var(--black);
+}
+
+.cart_items a:hover {
+  color: var(--secondary);
+}
+
+.cart .items input {
+  width: 30%;
+  background: var(--body);
+  padding: 8px 8px 12px;
+}
+
+.cart .items input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.cart .items input:focus {
+  outline: none;
+}
+
