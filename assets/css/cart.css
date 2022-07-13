@@ -1,18 +1,22 @@
-.cart_items .row {
-  background: #fff;
-  padding-top: 15px;
-  padding-bottom: 13px;
+
+.card-header {
+  background: var(--secondary);
+  color: var(--white);
 }
 
-.cart_items i:hover {
+.card .list-group .bi-trash-fill {
   color: var(--secondary);
 }
 
-.cart_items h5 {
+.card .list-group .bi-trash-fill:hover {
+  color: var(--primary);
+}
+
+.card .list-group h5 {
   font-weight: 600;
 }
 
-.cart_items a {
+.card .list-group a {
   color: var(--black);
 }
 
@@ -20,17 +24,26 @@
   color: var(--secondary);
 }
 
-.cart .items input {
+.card .list-group input {
   width: 30%;
   background: var(--body);
   padding: 8px 8px 12px;
 }
 
-.cart .items input[type=number]::-webkit-inner-spin-button {
+.card .list-group input[type=number]::-webkit-inner-spin-button {
   appearance: none;
 }
 
-.cart .items input:focus {
+.card .list-group input:focus {
   outline: none;
 }
 
+.card a.button{
+  background: var(--secondary);
+  color: var(--white);  
+}
+
+.card a.button:hover{
+  background: var(--primary);
+  color: var(--white);  
+}

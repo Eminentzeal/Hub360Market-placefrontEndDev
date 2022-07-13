@@ -1,0 +1,91 @@
+#v-pills-tab > ul {
+  border-radius: 10px;
+}
+
+.nav-pills li:first-child .nav-link  {
+  border-radius: 5px 5px 0 0!important;
+}
+
+.nav-pills li .nav-link  {
+  color: var(--black);
+}
+
+.nav-pills li .nav-link:hover  {
+  background: var(--secondary);
+}
+
+.nav-pills .nav-link.active {
+  background: var(--border);
+  color: var(--black);
+}
+
+.card .card-header {
+  font-size: 1.3rem;
+  font-weight: 600;
+  /* border: 1px solid #00000020; */
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.card .card-header a {
+  color: white;
+
+}
+
+.card .card-header a:hover {
+  background: white;
+  color: var(--secondary);
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+.card.profile .list-group-item .title {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.card.order .list-group-item a {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black);
+}
+
+.card.order .list-group-item a:hover {
+  color: var(--secondary);
+}
+
+.card.wishlist .w-pro-name a,
+.card.wishlist a i:hover {
+  color: var(--black);
+}
+
+.card.wishlist .w-pro-name a:hover,
+.card.wishlist a i:hover {
+  color: var(--secondary);
+}
+
+.card.order .pro-qty,
+.card.wishlist .pro-qty {
+  font-size: 12px;
+}
+
+.card.wishlist .list-group-item .button:hover {
+  color: var(--white);
+}
+
+#floatingPassword {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+}
+
+#floatingPassword:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--secondary);
+}
+
+.card.changePwd .button:hover
+.card.wishlist .list-group-item .button:hover {
+color: var(--white);
+}

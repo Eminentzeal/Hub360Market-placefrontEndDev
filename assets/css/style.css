@@ -20,6 +20,12 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: var(--body);
+  line-height: 1rem !important;
+  letter-spacing: 0.03rem !important;
+}
+
+i {
+  line-height: 0 !important;
 }
 
 h1 {
@@ -420,6 +426,13 @@ body > header > nav > button {
   #side-submenu > ul:nth-child(1) {
     padding-left: 0 !important;
     height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  #side-submenu > ul:nth-child(1) {
+    padding-left: 0 !important;
+    height: 17rem;
   }
 }
 
