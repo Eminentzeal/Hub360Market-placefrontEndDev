@@ -191,6 +191,17 @@ hr {
 }
 
 
+.first-nav,
+.first-nav h5 {
+  background: var(--breadcrumb);
+  color: var(--white);
+}
+
+.second-nav .input-group .search-btn {
+  background: var(--secondary);
+  color: var(--white);
+}
+
 .second-nav .input-group .btn:hover,
 .second-nav .input-group .btn.show {
   background-color: transparent;
