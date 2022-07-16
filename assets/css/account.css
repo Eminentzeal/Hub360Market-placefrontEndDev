@@ -57,14 +57,14 @@
   padding: 0px 2px;
 }
 
-.card.order .list-group-item .button {
-  background: transparent;
+.card.order .list-group-item .d-btn {
   color: var(--secondary);
 }
 
-.card.order .list-group-item .button:hover {
-  background: var(--border);
+.card.order .list-group-item .d-btn:hover {
+  opacity: .8;
 }
+
 .card.order .list-group-item a {
   font-weight: 600;
   font-size: 14px;
