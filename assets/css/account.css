@@ -12,6 +12,7 @@
 
 .nav-pills li .nav-link:hover  {
   background: var(--secondary);
+  color: var(--white);
 }
 
 .nav-pills .nav-link.active {
@@ -44,6 +45,26 @@
   font-size: 12px;
 }
 
+.card.order .list-group-item .order-no {
+  font-size: 14px;
+  color: grey;
+}
+
+.card.order .list-group-item .d-status {
+  background: var(--secondary);
+  font-size: 10px;
+  color: var(--white);
+  padding: 0px 2px;
+}
+
+.card.order .list-group-item .button {
+  background: transparent;
+  color: var(--secondary);
+}
+
+.card.order .list-group-item .button:hover {
+  background: var(--border);
+}
 .card.order .list-group-item a {
   font-weight: 600;
   font-size: 14px;

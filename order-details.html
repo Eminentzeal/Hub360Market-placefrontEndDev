@@ -172,7 +172,8 @@
       <div class="container">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">My Account</li>
+          <li class="breadcrumb-item"><a href="account.html">My Account</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Order Details</li>
         </ol>
       </div>
     </nav>
@@ -187,11 +188,11 @@
             <div class="nav flex-md-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item p-0">
-                  <a class="nav-link py-3 active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                  <a class="nav-link py-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
                 </li>
 
                 <li class="list-group-item p-0">
-                  <a class="nav-link rounded-0 py-3" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false">Orders</a>
+                  <a class="nav-link rounded-0 py-3 active" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false">Orders</a>
                 </li>
 
                 <li class="list-group-item p-0">
@@ -209,7 +210,7 @@
         <div class="col-8">
           <div class="card border-0">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade  show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                 <div class="card profile border-0">
                   <div class="card-header py-3 d-flex justify-content-between">
                     <h4 class="m-0">Profile</h4>
@@ -244,9 +245,10 @@
                 </div>
               </div>
               
-              <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab" tabindex="0">
+              <div class="tab-pane fade show active" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab" tabindex="0">
                 <div class="card order border-0">
-                  <div class="card-header py-3">
+                  <div class="card-header py-3 d-flex gap-3">
+                    <a href=""><i class="bi bi-arrow-left"></i></a>
                     <h4 class="m-0">Orders</h4>
                   </div>
                   <ul class="list-group list-group-flush">
@@ -268,7 +270,7 @@
                               <div class="d-date">15-01-2022</div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
-                             <a class="button d-btn" href="order-details.html" >See Details</a>
+                             <a class="button d-btn" href="" type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">See Details</a>
                             </div>
                           </div>
                         </div>
@@ -279,6 +281,94 @@
                   </ul>
                 </div>  
               </div>
+
+              <!--Order Details Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="card order border-0">
+                      <div class="card-header modal-header py-3">
+                        <h4 class="m-0">Orders Details</h4>
+                        <i class="bi bi-x" type="button" aria-label="Close" data-bs-dismiss="modal"></i>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-3">
+                          <div class="row item">
+                            <div class="col-12 pe-0">
+                              <div class="d-flex">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-3">
+                                  <a href="#">
+                                    <img class="img-fluid" src="assets/img/featured/oscilloscope.jpg"" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-6 px-3">
+                                  <h5 class="w-pro-name mb-1">
+                                    FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope
+                                  </h5>
+                                  <div class="order-no mb-3">Order no: <span>0000000000</span></div>
+                                  <div class="d-status d-inline-block mb-1">Delivered</div>
+                                  <div class="d-date">15-01-2022</div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+                                 <a class="button d-btn" href="" type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">See History</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        
+                      </ul>
+                    </div> 
+
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="close-button" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="button">Continue</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <!--Order History Modal -->
+              <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="card order border-0">
+                      <div class="card-header modal-header py-3">
+                        <h4 class="m-0">Orders History</h4>
+                        <i class="bi bi-x" type="button" aria-label="Close" data-bs-dismiss="modal"></i>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-3">
+                          <div class="row item">
+                            <div class="col-12 pe-0">
+                              <div class="d-flex">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-3">
+                                  <a href="#">
+                                    <img class="img-fluid" src="assets/img/featured/oscilloscope.jpg"" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-6 px-3">
+                                  <h5 class="w-pro-name mb-1">
+                                    FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope
+                                  </h5>
+                                  <div class="order-no mb-3">Order no: <span>0000000000</span></div>
+                                  <div class="d-status d-inline-block mb-1">Delivered</div>
+                                  <div class="d-date">15-01-2022</div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+                                 <a class="button d-btn" href="" type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go Back</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+
 
               <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab" tabindex="0">
                 <div class="card wishlist border-0">
