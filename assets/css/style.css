@@ -147,7 +147,7 @@ hr {
 }
 
 .first-nav .mini-cart .dropdown-menu {
-  left: -240px;
+  left: -300px;
   width: 20rem;
 }
 
@@ -572,7 +572,7 @@ hr {
 
 .footer .first_footer .input-group .button {
   background: var(--primary);
-  color: var(--white);
+  color: var(--white)
 }
 
 .footer .first_footer .button:hover {
