@@ -19,6 +19,8 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/cart.css">
+  <link rel="stylesheet" href="assets/css/checkout.css">
 
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -179,102 +181,142 @@
   </header>
 
   <main>
-    <!-- <section class="container checkout">
+    <section class="container cart">
       <div class="row">
-        <div class="col-12 col-lg-8">
-          <div class="card border-0 bg-light">
-            <div class="accordion" id="accordionExample">
-
-              <div class="accordion-item mb-4 border-0">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Why do farms order from us?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Beyond making certified high-yielding seed varieties available to farmers at affordable prices, we also provide free extension service that is available for whatever quantity of input you order. Our after-sales services guarantee that you receive all of the assistance you require.
-                  </div>
-                </div>
-              </div>
-        
-              <div class="accordion-item mb-4 border-0">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What should I do if I need help?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    The easiest way to reach us is to click on the Chat With Us tab on our website. You can also send an email to support@nobaafrica.com or call +234 818 534 3252 between the hours of 8 am - 6 pm.
-                  </div>
-                </div>
-              </div>
-        
-              <div class="accordion-item mb-4">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    What is your minimum order quantity?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Ordering in small quantities? No Wahala! We do not have a minimum order quantity.
-                  </div>
-                </div>
-              </div>
-        
-              <div class="accordion-item mb-4">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    How do I place an order on your website?
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    To place an order, follow the following steps:
-                    <br>
-                    Step 1 - To order a product, simply click on it. <br>
-                    Step 2- Click 'add to cart' on the product description page. <br>
-                    Step 3 - Choose from a variety of payment options. <br>
-                    Step 4- Click on the 'checkout' button to confirm your order. <br>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="accordion-item mb-4">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    How do I make payment?
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    We offer a range of payment options for our customers. You can easily make online payments using your bank card or through bank transfers.
-                  </div>
-                </div>
-              </div>
-        
-              <div class="accordion-item mb-4">
-                <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    How do I get my products after i have placed an order?
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Noba Africa offers a delivery service. Our standard delivery period is between …. To … 
-                  </div>
-                </div>
-              </div>
+        <div class="col-12 col-lg-8 checkout">
+          <div class="card border-0">
+            <div class="card-header">
+              <h4 class="pt-2">Checkout</h4>
             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item border-0">
+                <div class="card row item border-0" >
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h4 class="pt-2">Shipping Information</h4>
+                    <a href=""><i class="bi bi-pencil-square"></i></a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="title">John Deo</h5>
+                    <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                    <p class="mb-1">+234 8149594939</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-group-item border-0">
+                <div class="card row item border-0" >
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h4 class="pt-2">Delivery Method</h4>
+                    <a href=""><i class="bi bi-pencil-square"></i></a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="title">Door Delivery</h5>
+                    <p class="mb-1 content">Delivered between Thursday 21 Jul and Monday 25 Jul for ₦ 1,490</p>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="list-group-item border-0">
+                <div class="card row item border-0" >
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h4 class="pt-2">Payment Method</h4>
+                    <a href=""><i class="bi bi-pencil-square"></i></a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="title">How do you want to pay for your order?</h5>
+                    <div class="content d-flex align-items-center">
+                      <img class="icon me-2" src="/assets/img/cart-icon/visa.png" alt="">
+                      <span class="">4128********7070</span>
+                    </div>
+                    
+                  </div>
+                  <a class="button d-none d-lg-block text-center" href="cart.html">Confirm order</a>
+                </div>
+              </li>
+
+              
+            </ul>
           </div>
         </div>
-        <div class="col-12 col-lg-4"></div>
+        
+        <aside class="col-12 col-lg-4 summary">
+          <section class="card border-0">
+            <div class="card-header">
+              <h4 class="pt-2">Summary</h4>
+            </div>
+            <div class="card y-ords item border-0" >
+              <div class="card-header">
+                <h4 class="pt-2">Your Order (1 Item)</h4>
+              </div>
+              <ul class="list-group items list-group-flush ">
+                <li class="list-group-item d-flex">
+                  <div class="col-3">
+                    <img src="assets/img/featured/oscilloscope.jpg" width="50" alt="">
+                  </div>
+                  <div class="col-9 pro-content">
+                    <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
+                    <h6 class="pro-price ms-2 mb-0">1 x $700</h6>
+                  </div>
+                </li> 
+                <li class="list-group-item d-flex">
+                  <div class="col-3">
+                    <img src="assets/img/featured/oscilloscope.jpg" width="50" alt="">
+                  </div>
+                  <div class="col-9 pro-content">
+                    <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
+                    <h6 class="pro-price ms-2 mb-0">1 x $700</h6>
+                  </div>
+                </li> 
+                <li class="list-group-item d-flex">
+                  <div class="col-3">
+                    <img src="assets/img/featured/oscilloscope.jpg" width="50" alt="">
+                  </div>
+                  <div class="col-9 pro-content">
+                    <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
+                    <h6 class="pro-price ms-2 mb-0">1 x $700</h6>
+                  </div>
+                </li> 
+                <li class="list-group-item d-flex">
+                  <div class="col-3">
+                    <img src="assets/img/featured/oscilloscope.jpg" width="50" alt="">
+                  </div>
+                  <div class="col-9 pro-content">
+                    <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
+                    <h6 class="pro-price ms-2 mb-0">1 x $700</h6>
+                  </div>
+                </li> 
+              </ul>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item pt-3">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">Subtotal:</h6>
+                    <h6 class="m-0">$700</h6>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">Delivery fee:</h6>
+                    <h6 class="m-0">$700</h6>
+                  </div>
+                </li>
+                </li>
+                <li class="list-group-item d-flex justify-content-between py-3">
+                  <h5 class="m-0">Total:</h5>
+                  <h5 class="m-0">$700</h5>
+                </li>
+                <li class="list-group-item text-center py-3">
+                  <a class="text-center" href="cart.html">Edit Cart</a>
+                </li>
+              </ul>
+             
+            
+            </div>
+            <a class="button d-lg-none text-center" href="cart.html">Confirm order</a>
+          </section>
+        </aside>
       </div>
-    </section> -->
+    </section>
     
   </main>
+  
 
   <footer>
     <div class="footer">

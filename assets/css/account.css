@@ -40,57 +40,61 @@
   transition: var(--transition);
 }
 
-.card.profile .list-group-item .title {
+.profile .list-group-item .title {
   font-weight: 600;
   font-size: 12px;
 }
 
-.card.order .list-group-item .order-no {
+.orders .list-group-item .order-no {
   font-size: 14px;
   color: grey;
 }
 
-.card.order .list-group-item .d-status {
+.orders .list-group-item .d-status {
   background: var(--secondary);
   font-size: 10px;
   color: var(--white);
   padding: 0px 2px;
 }
 
-.card.order .list-group-item .d-btn {
+.orders .list-group-item .d-btn {
   color: var(--secondary);
 }
 
-.card.order .list-group-item .d-btn:hover {
+.orders .list-group-item .d-btn:hover {
   opacity: .8;
 }
 
-.card.order .list-group-item a {
+.orders .list-group-item a {
   font-weight: 600;
   font-size: 14px;
   color: var(--black);
 }
 
-.card.order .list-group-item a:hover {
+.orders .list-group-item a:hover {
   color: var(--secondary);
 }
 
-.card.wishlist .w-pro-name a,
-.card.wishlist a i:hover {
+.wishlist .pro-name a,
+.wishlist a i:hover {
   color: var(--black);
 }
 
-.card.wishlist .w-pro-name a:hover,
-.card.wishlist a i:hover {
+.wishlist .pro-name a:hover,
+.wishlist a i:hover {
   color: var(--secondary);
 }
 
-.card.order .pro-qty,
-.card.wishlist .pro-qty {
+.orders .pro-qty,
+.wishlist .pro-price {
   font-size: 12px;
 }
 
-.card.wishlist .list-group-item .button:hover {
+.wishlist .pro-price {
+  font-weight: 600;
+}
+
+.wishlist .list-group-item .button:hover {
   color: var(--white);
 }
 
@@ -108,7 +112,30 @@
   border-color: var(--secondary);
 }
 
-.card.changePwd .button:hover
-.card.wishlist .list-group-item .button:hover {
+.changePwd .button:hover
+.wishlist .list-group-item .button:hover {
 color: var(--white);
 }
+
+.accordion-button:focus {
+  background: var(--secondary);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: var(--white);
+
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.accordion-body {
+  background: var(--body);
+}
+
+.accordion-body .list-group-item {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
+}
+

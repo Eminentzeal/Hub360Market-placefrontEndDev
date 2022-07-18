@@ -1,4 +1,3 @@
-
 .card-header {
   background: var(--secondary);
   color: var(--white);
@@ -20,6 +19,10 @@
   color: var(--black);
 }
 
+.card .list-group a.button {
+  color: var(--white);
+}
+
 .cart_items a:hover {
   color: var(--secondary);
 }
@@ -38,12 +41,11 @@
   outline: none;
 }
 
-.card a.button{
-  background: var(--secondary);
-  color: var(--white);  
+.cart .icon {
+  width: 3rem;
 }
 
-.card a.button:hover{
-  background: var(--primary);
-  color: var(--white);  
+.b-prot {
+  font-size: 14px;
+  line-height: 1.2rem;
 }

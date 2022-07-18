@@ -1,0 +1,36 @@
+.checkout .list-group-item {
+  background: var(--body);
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
+}
+
+.list-group-item .card-header {
+  background: var(--white);
+  color: var(--black);
+}
+
+.list-group-item .card-body .content {
+  font-size: 13px;
+  color: grey;
+}
+
+.list-group-item .icon {
+  width: 2rem;
+}
+
+.summary .y-ords .card-header {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.summary .y-ords .items {
+  overflow: auto;
+  height: 35vh;
+}
+
+.summary .y-ords .pro-name,
+.summary .y-ords .pro-price {
+  font-size: 12px;
+}
