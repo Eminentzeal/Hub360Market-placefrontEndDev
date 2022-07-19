@@ -141,6 +141,7 @@ color: var(--white);
 
 .add-btn {
   font-size: 12px;
+  cursor: pointer;
 }
 
 .shippingAddress .title {
