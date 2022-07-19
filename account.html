@@ -205,6 +205,10 @@
                 <li class="list-group-item p-0">
                   <a class="nav-link rounded-0 py-3 " id="v-pills-details-tab details" data-bs-toggle="pill" data-bs-target="#v-pills-details" type="button" role="tab" aria-controls="v-pills-details" aria-selected="false">Details</a>
                 </li>
+
+                <li class="list-group-item p-0">
+                  <a class="nav-link rounded-0 py-3 " id="v-pills-shippingAddress-tab shippingAddress" data-bs-toggle="pill" data-bs-target="#v-pills-shippingAddress" type="button" role="tab" aria-controls="v-pills-shippingAddress" aria-selected="false">Shipping Address</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -395,7 +399,7 @@
                 </div>
               </div>
               
-              <div class="tab-pane fade show active" id="v-pills-details" role="tabpanel" aria-labelledby="v-pills-details-tab" tabindex="0">
+              <div class="tab-pane fade" id="v-pills-details" role="tabpanel" aria-labelledby="v-pills-details-tab" tabindex="0">
                 <div class="card details border-0" style="height: 100vh;">
                   <div class="card-header py-3">
                     <h4 class="m-0">Details</h4>
@@ -453,6 +457,59 @@
                   <a href="" class="button text-center mx-3 py-3">Submit</a>
                 </div>
               </div>
+
+              <div class="tab-pane fade show active" id="v-pills-shippingAddress" role="tabpanel" aria-labelledby="v-pills-shippingAddress-tab" tabindex="0">
+                <div class="card shippingAddress border-0">
+                  <!-- <div class="card-header py-3">
+                    <h4 class="m-0">Shipping Address</h4>
+                  </div> -->
+                  <div class="card row shippingAddress border-0" >
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h4 class="pt-2">Shipping Address</h4>
+                      <div class="button add-btn">
+                        <i class="bi bi-plus-circle-fill" type="button" data-bs-toggle="modal" data-bs-target="#changeCheckoutAddress"></i>
+                        <span>Add new Address</span>
+                      </div>
+                    </div>
+                    <div class="card-body border-bottom">
+                      <ul class="list-group">
+                        <li class="list-group-item p-0 border-0 d-flex align-items-center justify-content-between">
+                          <div class="">
+                            <h5 class="title">John Deo</h5>
+                            <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                            <p class="mb-1 content">+234 8149594939</p>
+                            
+                          </div>
+                          <div class="text-end">
+                            <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                          </div>
+                        </li>
+                        <li class="list-group-item p-0 mt-2 border-0">
+                          <span>Default</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body border-bottom">
+                      <ul class="list-group">
+                        <li class="list-group-item p-0 border-0 d-flex align-items-center justify-content-between">
+                          <div class="">
+                            <h5 class="title">John Deo</h5>
+                            <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                            <p class="mb-1 content">+234 8149594939</p>
+                          </div>
+                          <div class="text-end">
+                            <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                          </div>
+                        </li>
+                        <li class="list-group-item p-0 mt-3 border-0">
+                          <a class="" href="">Set as default</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                
             </div>
           </div>
         </div>
@@ -468,7 +525,7 @@
               Profile
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item py-3">
@@ -656,7 +713,7 @@
               Details
             </button>
           </h2>
-          <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item border-0">
