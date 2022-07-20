@@ -188,6 +188,8 @@
               <h4 class="pt-2">Checkout</h4>
             </div>
             <ul class="list-group list-group-flush">
+
+              <!-- ==== Shipping Information Group ==== -->
               <li class="list-group-item border-0">
                 <div class="card row item border-0" >
                   <div class="card-header d-flex justify-content-between align-items-center">
@@ -202,134 +204,280 @@
                 </div>
               </li>
 
-              <!--changeCheckoutAddress Modal -->
-        <div class="modal fade" id="changeCheckoutAddress" aria-hidden="true" aria-labelledby="changeCheckoutAddressLabel" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3>Address Book</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              
-              <div class="modal-body p-0">
-                <div class="card-header d-flex align-items-center">
-                  <i class="bi bi-plus-circle-fill pe-3"></i>
-                  <h4 class="pt-2">Add a new address</h4>
-                </div>
-                <!-- <div class="card-header border-0">
-                  <h5 class="m-0">Default addres</h5>
-                </div> -->
-                  
-                <div class="card-body">
-                  <div class="scroll">
-                    <div class="row my-3">
-                      <div class="col-1">
-                        <input type="radio">
-                      </div>
-                      <div class="col-8 ps-0">
-                        <h5 class="title">John Deo</h5>
-                        <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
-                        <p class="mb-1 content">+234 8149594939</p>
-                      </div>
-                      <div class="col-3">
-                        <div class="d-inline-block">
-                          <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
-                        </div>
-                        <div class="d-inline-block">
-                          <span>Remove</span><i class="bi bi-trash ps-1"></i>
-                        </div>
-                      </div>
+              <!--==== Change CheckoutAddress Modal ==== -->
+              <div class="modal fade" id="changeCheckoutAddress" aria-hidden="true" aria-labelledby="changeCheckoutAddressLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3>Address Book</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="row my-3">
-                      <div class="col-1">
-                        <input type="radio">
+                    <div class="modal-body p-0">
+
+                      <!-- ====Add New Address -->
+                      <div class="card-header d-flex align-items-center">
+                        <i class="bi bi-plus-circle-fill pe-3"></i>
+                        <a href="" class="py-2" type="button" data-bs-toggle="modal" data-bs-target="#addNewAddress">Add a new address</a>
                       </div>
-                      <div class="col-8 ps-0">
-                        <h5 class="title">John Deo</h5>
-                        <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
-                        <p class="mb-1 content">+234 8149594939</p>
-                      </div>
-                      <div class="col-3">
-                        <div class="d-inline-block">
-                          <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
+                      <!-- ====Existing Addresses=== -->
+                      <div class="card-body">
+                        <div class="scroll">
+                          <div class="row my-3">
+                            <div class="col-1">
+                              <input type="radio">
+                            </div>
+                            <div class="col-8 ps-0">
+                              <h5 class="title">John Deo</h5>
+                              <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                              <p class="mb-1 content">+234 8149594939</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="d-inline-block" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress">
+                                <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
+                              </div>
+                              
+                              <div class="d-inline-block" type="button" data-bs-toggle="modal" data-bs-target="#removeExistingAddress">
+                                <span>Remove</span><i class="bi bi-trash ps-1"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row my-3">
+                            <div class="col-1">
+                              <input type="radio">
+                            </div>
+                            <div class="col-8 ps-0">
+                              <h5 class="title">John Deo</h5>
+                              <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                              <p class="mb-1 content">+234 8149594939</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="d-inline-block">
+                                <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
+                              </div>
+                              <div class="d-inline-block">
+                                <span>Remove</span><i class="bi bi-trash ps-1"></i>
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="row my-3">
+                            <div class="col-1">
+                              <input type="radio">
+                            </div>
+                            <div class="col-8 ps-0">
+                              <h5 class="title">John Deo</h5>
+                              <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                              <p class="mb-1 content">+234 8149594939</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="d-inline-block">
+                                <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
+                              </div>
+                              <div class="d-inline-block">
+                                <span>Remove</span><i class="bi bi-trash ps-1"></i>
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="row my-3">
+                            <div class="col-1">
+                              <input type="radio">
+                            </div>
+                            <div class="col-8 ps-0">
+                              <h5 class="title">John Deo</h5>
+                              <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                              <p class="mb-1 content">+234 8149594939</p>
+                            </div>
+                            <div class="col-3">
+                              <div class="d-inline-block">
+                                <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
+                              </div>
+                              <div class="d-inline-block">
+                                <span>Remove</span><i class="bi bi-trash ps-1"></i>
+                              </div>
+                              
+                            </div>
+                          </div>
                         </div>
-                        <div class="d-inline-block">
-                          <span>Remove</span><i class="bi bi-trash ps-1"></i>
+                        <div class="row my-3 text-center">
+                          <a class="button" href="">Use this address</a>
                         </div>
-                        
-                      </div>
-                    </div>
-                    <div class="row my-3">
-                      <div class="col-1">
-                        <input type="radio">
-                      </div>
-                      <div class="col-8 ps-0">
-                        <h5 class="title">John Deo</h5>
-                        <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
-                        <p class="mb-1 content">+234 8149594939</p>
-                      </div>
-                      <div class="col-3">
-                        <div class="d-inline-block">
-                          <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
-                        </div>
-                        <div class="d-inline-block">
-                          <span>Remove</span><i class="bi bi-trash ps-1"></i>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="row my-3">
-                      <div class="col-1">
-                        <input type="radio">
-                      </div>
-                      <div class="col-8 ps-0">
-                        <h5 class="title">John Deo</h5>
-                        <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
-                        <p class="mb-1 content">+234 8149594939</p>
-                      </div>
-                      <div class="col-3">
-                        <div class="d-inline-block">
-                          <span>Edit</span> <i class="bi bi-pencil-square ps-1"></i>
-                        </div>
-                        <div class="d-inline-block">
-                          <span>Remove</span><i class="bi bi-trash ps-1"></i>
-                        </div>
-                        
                       </div>
                     </div>
                   </div>
-                  <div class="row my-3 text-center">
-                    <a class="button" href="">Use this address</a>
+                </div>
+              </div>
+
+              <!-- ==== AddNew Address modal ==== -->
+              <div class="modal fade" id="addNewAddress" aria-hidden="true" aria-labelledby="addNewAddressLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-evenly border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- ====Edit shipping information add new address form==== -->
+                    <div class="card details border-0">
+                      <div class="card-header py-3">
+                        <h4 class="m-0">Add new address</h4>
+                      </div>
+                      <div class="scroll mx-3 mb-4">
+                        <div class="row">
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="firstName" placeholder="First Name" required >
+                              <label for="firstName">First Name</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="lastName" placeholder="Last Name" required >
+                              <label for="lastName">Last Name</label>
+                            </div>
+                          </div>
+                        
+    
+                          <div class="col-12">
+                            <div class="form-floating">
+                              
+                              <input type="text" class="form-control mt-3" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              <label for="email">Address</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="number" class="form-control mt-3" id="phoneNumber" placeholder="Phone Number" required>
+                              <label for="phoneNumber">Phone Number</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <select class="form-select mt-3" id="floatingSelect">
+                                <option selected>Select state</option>
+                                <option value="1">Abia</option>
+                                <option value="2">Adamawa</option>
+                                <option value="2">Adamawa</option>
+                              </select>
+                              <label for="floatingSelect">State</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="phoneNumber" placeholder="City" required>
+                              <label for="phoneNumber">City</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="zip/postalCode" placeholder="Zip/Postal Code" required>
+                              <label for="zip/postalCode">Zip/Postal Code</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="" class="button text-center mx-3 py-3">Save</a>
+                    </div>
                   </div>
                 </div>
-                
               </div>
-            </div>
-            
-          </div>
-        </div>
 
-        <div class="modal fade" id="changeCheckoutAddressSuccess" aria-hidden="true" aria-labelledby="changeCheckoutAddressSuccessLabel" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header justify-content-evenly border-0">
-                <svg xmlns="http://www.w3.org//svg" width="40" height="40" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                </svg>
+              <!-- ==== Edit Existing Address modal ==== -->
+              <div class="modal fade" id="editExistingAddress" aria-hidden="true" aria-labelledby="editExistingAddressLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-evenly border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- ====Edit Existing Address Form==== -->
+                    <div class="card details border-0">
+                      <div class="card-header py-3">
+                        <h4 class="m-0">Update Address</h4>
+                      </div>
+                      <div class="scroll mx-3 mb-4">
+                        <div class="row">
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="firstName" placeholder="First Name" required >
+                              <label for="firstName">First Name</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="lastName" placeholder="Last Name" required >
+                              <label for="lastName">Last Name</label>
+                            </div>
+                          </div>    
+                          <div class="col-12">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              <label for="email">Address</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="number" class="form-control mt-3" id="phoneNumber" placeholder="Phone Number" required>
+                              <label for="phoneNumber">Phone Number</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <select class="form-select mt-3" id="floatingSelect">
+                                <option selected>Select state</option>
+                                <option value="1">Abia</option>
+                                <option value="2">Adamawa</option>
+                                <option value="2">Adamawa</option>
+                              </select>
+                              <label for="floatingSelect">State</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="phoneNumber" placeholder="City" required>
+                              <label for="phoneNumber">City</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="zip/postalCode" placeholder="Zip/Postal Code" required>
+                              <label for="zip/postalCode">Zip/Postal Code</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="" class="button text-center mx-3 py-3">Save Update</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="modal-body text-center">
-                <h4 class="pb-2">Product added successfully</h4>
-              </div>
-              
-            </div>
-          </div>
-        </div>
 
+              <!-- ==== Remove Existing Address modal ==== -->
+              <div class="modal fade" id="removeExistingAddress" tabindex="-1" aria-labelledby="removeExistingAddressLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-evenly border-0">
+                      <svg xmlns="http://www.w3.org//svg" width="40" height="40" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                      </svg>
+                    </div>
+                    <div class="modal-body text-center">
+                      <h4 class="">Address has beeen removed from your list of addresses</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                      <a class="mb-4" href="">Back</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ==== Delivery Method Group ==== -->
               <li class="list-group-item border-0">
                 <div class="card row item border-0" >
                   <div class="card-header d-flex justify-content-between align-items-center">
                     <h4 class="pt-2">Delivery Method</h4>
-                    <a href=""><i class="bi bi-pencil-square"></i></a>
+                    <i class="bi bi-pencil-square" type="button" data-bs-toggle="modal" data-bs-target="#changeDeliveryMethod"></i>
                   </div>
                   <div class="card-body">
                     <h5 class="title">Door Delivery</h5>
@@ -337,12 +485,58 @@
                   </div>
                 </div>
               </li>
+
+              <!--==== Change Delivery Method Modal ==== -->
+              <div class="modal fade" id="changeDeliveryMethod" aria-hidden="true" aria-labelledby="changeDeliveryMethodLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3>Choose Delivery Method</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+
+                      <!-- ==== Delivery Options ==== -->
+                      <div class="card-body">
+                        <div class="scroll">
+                          <div class="row py-3">
+                            <div class="col-1">
+                              <input type="radio">
+                            </div>
+                            <div class="col-11 ps-0">
+                              <h5 class="title">Door Delivery</h5>
+                              <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                              <p class="mb-1 content">+234 8149594939</p>
+                            </div>
+                          </div>
+
+                          <div class="row py-4">
+                            <div class="col-1">
+                              <input type="radio">
+                            </div>
+                            <div class="col-11 ps-0">
+                              <h5 class="title">Pick Up</h5>
+                              <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                              <p class="mb-1 content">+234 8149594939</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row my-3 text-center">
+                          <a class="button" href="">Save</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>      
             
+
+              <!-- ==== Payment Method Group ==== -->
               <li class="list-group-item border-0">
                 <div class="card row item border-0" >
                   <div class="card-header d-flex justify-content-between align-items-center">
                     <h4 class="pt-2">Payment Method</h4>
-                    <a href=""><i class="bi bi-pencil-square"></i></a>
+                    <i class="bi bi-pencil-square"  type="button" data-bs-toggle="modal" data-bs-target="#changePaymentMethod"></i>
                   </div>
                   <div class="card-body">
                     <h5 class="title">How do you want to pay for your order?</h5>
@@ -350,13 +544,61 @@
                       <img class="icon me-2" src="/assets/img/cart-icon/visa.png" alt="">
                       <span class="">4128********7070</span>
                     </div>
-                    
                   </div>
                   <a class="button d-none d-lg-block text-center" href="cart.html">Confirm order</a>
                 </div>
               </li>
 
-              
+              <!--==== Change Payment Method Modal ==== -->
+              <div class="modal fade" id="changePaymentMethod" aria-hidden="true" aria-labelledby="changePaymentMethod" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3>Choose Payment Method</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+
+                      <!-- ==== Payment Options ==== -->
+                      <div class="card-body">
+                        <div class="scroll">
+                          <ul class="list-group ">
+                            <li class="list-group-item border-0 my-3">
+                              <div class="row py-3">
+                                <div class="col-1">
+                                  <input type="radio">
+                                </div>
+                                
+                                <div class="col content d-flex align-items-center">
+                                  <img class="icon me-2" src="/assets/img/cart-icon/visa.png" alt="">
+                                  <span class="">4128********7070</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item border-0 my-3" >
+                              <div class="row py-3">
+                                <div class="col-1">
+                                  <input type="radio">
+                                </div>
+                                
+                                <div class="col content d-flex align-items-center">
+                                  <img class="icon me-2" src="/assets/img/cart-icon/card.png" alt="">
+                                  <span class="">Add a new card</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                      <img class="icon" src="/assets/img/cart-icon/64x76.png" alt="">
+                      <p>Your payment information is safe with us</p>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            
             </ul>
           </div>
         </div>

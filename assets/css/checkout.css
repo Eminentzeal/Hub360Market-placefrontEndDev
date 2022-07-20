@@ -21,8 +21,8 @@
   color: grey;
 }
 
-.list-group-item .icon {
-  width: 2rem;
+.icon {
+  width: 1.5rem;
 }
 
 .summary .y-ords .card-header {
@@ -56,8 +56,26 @@
   color: var(--secondary);
 }
 
-#changeCheckoutAddress .scroll {
+.scroll {
   height: 50vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.form-floating input,
+.form-select {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+}
+
+.form-floating input:focus,
+.form-select:focus  {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--secondary);
+}
+
+#changePaymentMethod p {
+  font-size: 13px;
 }
