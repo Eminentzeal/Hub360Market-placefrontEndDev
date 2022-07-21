@@ -179,9 +179,10 @@
   </header>
 
   <main>
+    <!-- ==== Large and medium Screen ( >=768px ) ==== -->
     <section class="container account d-none d-md-block py-4">
       <div class="row">
-
+        <!-- ==== Nav Tab Column Large and medium Screen ( >=768px ) ==== -->
         <div class="col-4">
           <div class="card border-0" style="height: 100vh;">
             <div class="nav flex-md-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -213,15 +214,20 @@
             </div>
           </div>
         </div>
+        <!-- ==== End of Nav Tab Column Large and medium Screen ( >=768px ) ==== -->
 
+
+        <!-- ==== Tab Content Column Large and medium Screen ( >=768px ) ==== -->
         <div class="col-8">
           <div class="card border-0">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+
+              <!-- ==== Profile Large and medium Screen ( >=768px ) ==== -->
+              <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                 <div class="card profile border-0">
                   <div class="card-header py-3 d-flex justify-content-between">
                     <h4 class="m-0">Profile</h4>
-                    <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                    <a href="details.html"><i class="bi bi-pencil-fill"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item py-3">
@@ -251,7 +257,9 @@
                   </ul>
                 </div>
               </div>
+              <!-- ==== End of Profile Large and medium Screen ( >=768px ) ==== -->
               
+              <!-- ==== Orders Large and medium Screen ( >=768px ) ==== -->
               <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab" tabindex="0">
                 <div class="card orders border-0">
                   <div class="card-header py-3">
@@ -287,7 +295,9 @@
                   </ul>
                 </div>  
               </div>
+              <!-- ==== End of Orders Large and medium Screen ( >=768px ) ==== -->
 
+              <!-- ==== Wishlist Large and medium Screen ( >=768px ) ==== -->
               <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab" tabindex="0">
                 <div class="card wishlist border-0">
                   <div class="card-header py-3">
@@ -373,7 +383,9 @@
                   </ul>
                 </div>
               </div>
+              <!-- ==== End of Wishlist Large and medium Screen ( >=768px ) ==== -->
 
+              <!-- ==== Change Password Large and medium Screen ( >=768px ) ==== -->
               <div class="tab-pane fade" id="v-pills-changePwd" role="tabpanel" aria-labelledby="v-pills-changePwd-tab" tabindex="0">
                 <div class="card changePwd border-0" style="height: 100vh;">
                   <div class="card-header py-3">
@@ -398,7 +410,9 @@
                   <a href="" class="button text-center mx-3 py-3">Submit</a>
                 </div>
               </div>
+              <!-- ==== End of Change Password Large and medium Screen ( >=768px ) ==== -->
               
+              <!-- ==== Details Large and medium Screen ( >=768px ) ==== -->
               <div class="tab-pane fade" id="v-pills-details" role="tabpanel" aria-labelledby="v-pills-details-tab" tabindex="0">
                 <div class="card details border-0" style="height: 100vh;">
                   <div class="card-header py-3">
@@ -406,37 +420,33 @@
                   </div>
                   <div class="mx-3 mb-4">
                     <div class="row">
-                      <div class="col">
+                      <div class="col-6">
                         <div class="form-floating">
                           <input type="text" class="form-control mt-3" id="firstName" placeholder="First Name" required >
                           <label for="firstName">First Name</label>
                         </div>
                       </div>
-                      <div class="col">
+                      <div class="col-6">
                         <div class="form-floating">
                           <input type="text" class="form-control mt-3" id="lastName" placeholder="First Name" required >
                           <label for="lastName">Last Name</label>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col">
+                    
+                      <div class="col-6">
                         <div class="form-floating">
                           <input type="email" class="form-control mt-3" id="email" placeholder="Email" required >
                           <label for="email">Email</label>
                         </div>
                       </div>
-                      <div class="col">
+                      <div class="col-6">
                         <div class="form-floating">
                           <input type="number" class="form-control mt-3" id="phoneNumber" placeholder="Phone Number" required>
                           <label for="phoneNumber">Phone Number</label>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col">
+                    
+                      <div class="col-6">
                         <div class="form-floating">
                           <select class="form-select mt-3" id="floatingSelect">
                             <option selected>Select option</option>
@@ -446,7 +456,7 @@
                           <label for="floatingSelect">Gender (Optional)</label>
                         </div>
                       </div>
-                      <div class="col">
+                      <div class="col-6">
                         <div class="form-floating">
                           <input type="date" class="form-control mt-3" id="phoneNumber" placeholder="Birthday" required>
                           <label for="birthday">Birthday (Optional)</label>
@@ -457,17 +467,16 @@
                   <a href="" class="button text-center mx-3 py-3">Submit</a>
                 </div>
               </div>
+              <!-- ==== End of Details Large and medium Screen ( >=768px ) ==== -->
 
-              <div class="tab-pane fade show active" id="v-pills-shippingAddress" role="tabpanel" aria-labelledby="v-pills-shippingAddress-tab" tabindex="0">
+              <!-- ==== Shipping Address Large and medium Screen ( >=768px ) ==== -->
+              <div class="tab-pane fade" id="v-pills-shippingAddress" role="tabpanel" aria-labelledby="v-pills-shippingAddress-tab" tabindex="0">
                 <div class="card shippingAddress border-0">
-                  <!-- <div class="card-header py-3">
-                    <h4 class="m-0">Shipping Address</h4>
-                  </div> -->
                   <div class="card row shippingAddress border-0" >
                     <div class="card-header d-flex justify-content-between align-items-center">
                       <h4 class="pt-2">Shipping Address</h4>
-                      <div class="add-btn">
-                        <i class="bi bi-plus-circle-fill" type="button" data-bs-toggle="modal" data-bs-target="#changeCheckoutAddress"></i>
+                      <div class="add-btn" type="button" data-bs-toggle="modal" data-bs-target="#addNewAddress">
+                        <i class="bi bi-plus-circle-fill"></i>
                         <span>Add new Address</span>
                       </div>
                     </div>
@@ -478,10 +487,9 @@
                             <h5 class="title">John Deo</h5>
                             <p class="mb-1 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
                             <p class="mb-1 content">+234 8149594939</p>
-                            
                           </div>
                           <div class="text-end">
-                            <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                            <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
                           </div>
                         </li>
                         <li class="list-group-item p-0 mt-2 border-0">
@@ -489,6 +497,7 @@
                         </li>
                       </ul>
                     </div>
+
                     <div class="card-body border-bottom">
                       <ul class="list-group">
                         <li class="list-group-item p-0 border-0 d-flex align-items-center justify-content-between">
@@ -498,7 +507,7 @@
                             <p class="mb-1 content">+234 8149594939</p>
                           </div>
                           <div class="text-end">
-                            <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                            <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
                           </div>
                         </li>
                         <li class="list-group-item p-0 mt-3 border-0">
@@ -508,15 +517,175 @@
                     </div>
                   </div>
                 </div>
+              </div>              
+              <!-- ==== End of Shipping Address Large and medium Screen ( >=768px ) ==== -->
+
+              <!-- ==== Add New Address modal ==== -->
+              <div class="modal fade" id="addNewAddress" aria-hidden="true" aria-labelledby="addNewAddressLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-evenly border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- ==== Add new address form ==== -->
+                    <div class="card details border-0">
+                      <div class="card-header py-3">
+                        <h4 class="m-0">Add new address</h4>
+                      </div>
+                      <div class="scroll mx-3 mb-4">
+                        <div class="row">
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="firstName" placeholder="First Name" required >
+                              <label for="firstName">First Name</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="lastName" placeholder="Last Name" required >
+                              <label for="lastName">Last Name</label>
+                            </div>
+                          </div>
+    
+                          <div class="col-12">
+                            <div class="form-floating">
+                              
+                              <input type="text" class="form-control mt-3" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              <label for="email">Address</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="number" class="form-control mt-3" id="phoneNumber" placeholder="Phone Number" required>
+                              <label for="phoneNumber">Phone Number</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <select class="form-select mt-3" id="floatingSelect">
+                                <option selected>Select state</option>
+                                <option value="1">Abia</option>
+                                <option value="2">Adamawa</option>
+                                <option value="2">Adamawa</option>
+                              </select>
+                              <label for="floatingSelect">State</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="phoneNumber" placeholder="City" required>
+                              <label for="phoneNumber">City</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="zip/postalCode" placeholder="Zip/Postal Code" required>
+                              <label for="zip/postalCode">Zip/Postal Code</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="" class="button text-center m-3 py-3">Save</a>
+                    </div>
+                    <!-- ==== End of Add new address form ==== -->
+                  </div>
+                </div>
+              </div>
+              <!-- ====End of Add New Address modal ==== -->
+
+              <!-- ==== Edit Existing Address modal ==== -->
+              <div class="modal fade" id="editExistingAddress" aria-hidden="true" aria-labelledby="editExistingAddressLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-evenly border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- ==== Edit Existing address form ==== -->
+                    <div class="card details border-0">
+                      <div class="card-header py-3">
+                        <h4 class="m-0">Edit Existing address</h4>
+                      </div>
+                      <div class="scroll mx-3 mb-4">
+                        <div class="row">
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="firstName" placeholder="First Name" required >
+                              <label for="firstName">First Name</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="lastName" placeholder="Last Name" required >
+                              <label for="lastName">Last Name</label>
+                            </div>
+                          </div>
+    
+                          <div class="col-12">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              <label for="email">Address</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="number" class="form-control mt-3" id="phoneNumber" placeholder="Phone Number" required>
+                              <label for="phoneNumber">Phone Number</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <select class="form-select mt-3" id="floatingSelect">
+                                <option selected>Select state</option>
+                                <option value="1">Abia</option>
+                                <option value="2">Adamawa</option>
+                                <option value="2">Adamawa</option>
+                              </select>
+                              <label for="floatingSelect">State</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="phoneNumber" placeholder="City" required>
+                              <label for="phoneNumber">City</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-12 col-lg-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control mt-3" id="zip/postalCode" placeholder="Zip/Postal Code" required>
+                              <label for="zip/postalCode">Zip/Postal Code</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="" class="button text-center m-3 py-3">Save</a>
+                    </div>
+                    <!-- ==== End of Edit Existing address form ==== -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- ====End of Edit Existing Address modal ==== -->
             </div>
           </div>
         </div>
+        <!-- ==== End of Tab Content Column Large and medium Screen ( >=768px ) ==== -->
       </div>
     </section>
+    <!-- ==== End of Large and medium Screen ( >=768px ) ==== -->
 
-    <section class="container d-lg-none">
+
+    <!-- ==== Small Screen Screen ( <=767px ) ==== -->
+    <section class="container d-md-none">
       <div class="accordion accordion-flush" id="accordionExample">
 
+        <!-- ==== Profile Small Screen Screen ( <=767px ) ==== -->
         <div class="accordion-item profile mb-4">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -554,7 +723,9 @@
             </div>
           </div>
         </div>
+        <!-- ==== End of profile Small Screen Screen ( <=767px ) ==== -->
   
+        <!-- ==== Orders Small Screen Screen ( <=767px ) ==== -->
         <div class="accordion-item orders mb-4">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -592,7 +763,9 @@
             </div>
           </div>
         </div>
-  
+        <!-- ====End of Orders Small Screen Screen ( <=767px ) ==== -->
+        
+        <!-- ==== Wishlist Small Screen Screen ( <=767px ) ==== -->
         <div class="accordion-item wishlist mb-4">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -672,7 +845,9 @@
             </div>
           </div>
         </div>
+        <!-- ==== End of Small Screen Screen ( <=767px ) ==== -->
   
+        <!-- ==== Change Password Small Screen Screen ( <=767px ) ==== -->
         <div class="accordion-item changePwd mb-4">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -704,7 +879,9 @@
             </div>
           </div>
         </div>
+        <!-- ==== End ofChange Password Small Screen Screen ( <=767px ) ==== -->
   
+        <!-- ==== Details Small Screen Screen ( <=767px ) ==== -->
         <div class="accordion-item details mb-4">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -757,9 +934,10 @@
             </div>
           </div>
         </div>
+        <!-- ==== End of Details Small Screen Screen ( <=767px ) ==== -->
       </div>
     </section>
-   
+    <!-- ====End of Small Screen Screen ( <=767px ) ==== -->
   </main>
 
   <footer>
