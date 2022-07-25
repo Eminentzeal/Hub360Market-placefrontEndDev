@@ -14,8 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
 
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <!-- Vendor CSS Files-->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -28,148 +30,112 @@
   <title>Hub360</title>
 </head>
 <body>
+  <!-- header section starts  -->
   <header>
-    <!-- ======= navigation =======-->
-    <nav class="navbar bg-white pb-2 pt-3 first-nav">
-      <div class="container">
-
-        <div class="offer">
-            <h5 class="m-0">Get 30% Off On Selected Items</h5>
+    <div class="top-header container d-flex justify-content-between py-3">
+      <div>
+        <h5 class="offer m-0">Get 30% Off On Selected Items</h5>
+      </div>
+      
+        <div id="account-btn">My Account 
+          <i class="fa fa-chevron-down"></i>
         </div>
 
-        <div class="d-flex align-items-center gap-3">
-          <div class="dropdown my-acc">
-            <a class="nav-link d-flex align-items-center" type="button" id="dropdownMenuButton" href="#" role="button" data-toggle="dropdown">
-              <p class="m-0">My Account</p><i class='bx bx-chevron-down'></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="login.html">Login</a>
-              <hr class="divider m-0">
-              <a class="dropdown-item" href="registration.html">Register</a>
-              <a class="dropdown-item" href="account.html">Profile</a>
-              <a class="dropdown-item" href="">Saved Items</a>
-              <a class="dropdown-item" href="">Orders</a>
-              <hr class="divider m-0">
-              <a class="dropdown-item" href="">Logout</a>
+        <div class="my-account">
+          <div class="box">
+            <div class="content">
+              <a class="dropdown-item py-4" href="login.html">Login</a>
+              <a class="dropdown-item py-4" href="registration.html">Register</a>
+              <a class="dropdown-item py-4" href="account.html">Profile</a>
+              <a class="dropdown-item py-4" href="">Saved Items</a>
+              <a class="dropdown-item py-4" href="">Orders</a>
+              <a class="dropdown-item py-4" href="">Logout</a>
             </div>
           </div>
-
-          <div class="dropdown mini-cart">
-            <a class="nav-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bx bx-cart"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-centered border-0 p-3" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <div class="row">
-                  <div class="col-12 pb-4">
-                    <div class="d-flex">
-                      <div class="col-4">
-                        <img src="assets/img/featured/oscilloscope.jpg" alt="">
-                      </div>
-                      <div class="col-6 pro-content">
-                        <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
-                        <h5 class="pro-price ms-2 mb-0">1 x $700</h5>
-                      </div>
-                      <div class="col-2 pro-remove text-end">
-                        <a href=""><i class="bi bi-x-circle-fill"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12 pb-4">
-                    <div class="d-flex">
-                      <div class="col-4">
-                        <img src="assets/img/featured/oscilloscope.jpg" alt="">
-                      </div>
-                      <div class="col-6 pro-content">
-                        <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
-                        <h5 class="pro-price ms-2 mb-0">1 x $700</h5>
-                      </div>
-                      <div class="col-2 pro-remove text-end">
-                        <a href=""><i class="bi bi-x-circle-fill"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12 d-flex justify-content-between align-items-center py-2 border-top border-bottom">
-                    <h5 class="m-0">Subtotal:</h5>
-                    <h5 class="m-0">$700</h5>
-                  </div>
-
-                  <div class="col-12 mt-3">
-                    <div class="d-flex justify-content-between">
-                      <a class="button view_cart" href="cart.html">View cart</a>
-                      
-                      <a class="button check_out" href="checkout.html">Checkout</a>
-                      
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
         </div>
-      </div>
-    </nav>
-      <hr class="m-0">
-    <nav class="navbar navbar-expand-lg bg-white second-nav ">
-      <div class="container gap-0 gap-lg-5 flex-nowrap"">
-        <div class="logo">
-          <a class="m-0" href="index.html"><img src="assets/img/hub360-logo-1-png.png" width="50" alt=""></a>
-        </div>
-
-        <div class="input-group border rounded">
-          <a class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="select">
-            <p class="m-0" id="selectText">All categories</p></a>
-          <ul class="dropdown-menu" id="list">
-            <li><a class="dropdown-item options" href="#">All Categories</a></li>
-            <li><a class="dropdown-item options" href="#">Electricals</a></li>
-            <li><a class="dropdown-item options" href="#">Home Appliances</a></li>
-            <li><a class="dropdown-item options" href="#">Electronics</a></li>
+    </div>
+    
+    <div class="header container">
+      <a href="index.html"><img class="logo" src="/assets/img/hub360-logo-1-png.png" alt="" ></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#blog">Blog</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item py-4 mx-0" href="#">Electronics</a></li>
+            <li><a class="dropdown-item py-4 mx-0" href="#">Electricals</a></li>
+            <li><a class="dropdown-item py-4 mx-0" href="#">Home Appliances</a></li>
           </ul>
-          <input type="text" class="form-control border-0" id="inputfield" placeholder="Search in All Categories">
-          <!-- <i class='bx bx-search pt-2'></i> -->
-          <!-- <a class="btn" style="background: yellow;" href="">Search</a> -->
-          <button class="btn search-btn" type="button">Search</button>
         </div>
-        
-        <div class="d-md-block d-lg-none">
-          <button class="navbar-toggler px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span><i id="bar"class='bx bx-menu px-0'></i></span>
-          </button>
-        </div>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-          <div class="offcanvas-header justify-content-end">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link d-flex align-items-center href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <p class="m-0">Categories </p><i class='bx bx-chevron-down'></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="electricals_store.html">Electricals</a></li>
-                  <li><a class="dropdown-item" href="homeappliances_store.html">Home Appliances</a></li>
-                  
-                  <li><a class="dropdown-item" href="electronics_store.html">Electronics</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="wishlist.html">Wishlist</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
       </div>
-    </nav>
-    <nav class="breadcrumb-nav my-4 py-3" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="assets/img/featured/oscilloscope.jpg"  alt="">
+          <div class="content pb-4">
+              <h3>FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h3>
+              <span class="price">$4.99-</span>
+              <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="assets/img/featured/oscilloscope.jpg"  alt="">
+          <div class="content pb-4">
+              <h3>FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h3>
+              <span class="price">$4.99-</span>
+              <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="assets/img/featured/oscilloscope.jpg"  alt="">
+          <div class="content pb-4">
+              <h3>FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h3>
+              <span class="price">$4.99-</span>
+              <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        
+        <div class="total mt-3">
+          <div class="d-flex justify-content-between">
+            <a class="button view_cart" href="cart.html">View cart</a>
+            
+            <a class="button check_out" href="checkout.html">Checkout</a>
+            
+          </div>
+        </div>
+      </div>
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="Your email" class="box">
+        <input type="password" placeholder="Your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+      </form>
+    </div>
+    
+  </header>
+  <!-- header section ends -->
+  <nav class="breadcrumb-nav my-4 py-3" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
       <div class="container">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -178,7 +144,6 @@
         </ol>
       </div>
     </nav>
-  </header>
 
   <main>
     <section class="container account py-4">

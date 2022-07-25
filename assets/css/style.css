@@ -131,11 +131,11 @@ header{
 
 .top-header .my-account{
   position: absolute;
-  top:5%; right:-110%;
+  top:10%; right:-110%;
   padding:1rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
-  width:5remem;
+  width:15rem;
   background: #fff;
 }
 
@@ -145,15 +145,14 @@ header{
   z-index: 1001;
 }
 
-.top-header .my-account .box{
-  
-  
-}
-
 .top-header .my-account .box .content .dropdown-item{
   color:var(--black);
   font-size: 1.7rem;
-  padding-bottom: 1rem;
+}
+
+.top-header .my-account .box .content .dropdown-item:hover{
+  color:var(--secondary);
+  font-size: 1.7rem;
 }
 
 /* ==== Top Header My Account End ==== */
@@ -460,7 +459,7 @@ header{
 
 
 .owl-carousel img{
-  height: 30vh;
+  height: 20vh;
 }
 
 .owl-carousel .product_thumb {
@@ -779,7 +778,7 @@ header{
 
    /* ====== Owl Carousel ====== */
    .owl-carousel img {
-    height: 40vh;
+    height: 20vh;
   }
 }
 
@@ -816,7 +815,7 @@ header{
   .header .navbar{
       position: absolute;
       top:110%; right:-110%;
-      width:30rem;
+      width:20rem;
       box-shadow: var(--box-shadow);
       border-radius: .5rem;
       background: #fff;
