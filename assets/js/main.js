@@ -1,3 +1,4 @@
+
 // ====== Side Menu on index.html ======
 let sideSubmenu = document.getElementById("side-submenu");
 let menuBtn = document.getElementById("menu-btn");
@@ -15,25 +16,66 @@ menuBtn.style.display="block";
 closeBtn.style.display="none";
 }
 
-// ====== Search select in index.html ======
 
-let select = document.getElementById("select");
-let list = document.getElementById("list");
-let selectText = document.getElementById("selectText");
-let inputfield = document.getElementById("inputfield");
-let options = document.getElementsByClassName("options");
+// ====== Top Header in Index.html ======
+let myAccount = document.querySelector('.my-account');
 
-select.onclick = function() {
-  list.classList.toggle("open");
+document.querySelector('#account-btn').onclick = () =>{
+    myAccount.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
 }
 
-for (option of options) {
-  option.onclick = function(){
-    selectText.innerHTML = this.innerHTML;
-    inputfield.placeholder = `Search in ${selectText.innerHTML}`
-  }
+// ====== Header in Index.html ======
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    myAccount.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
 }
 
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    myAccount.classList.remove('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    myAccount.classList.remove('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    myAccount.classList.remove('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    myAccount.classList.remove('active')
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
 
 // ====== Image selection on sproduct.html ======
 
