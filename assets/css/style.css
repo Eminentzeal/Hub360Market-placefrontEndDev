@@ -48,16 +48,21 @@ a {
 } 
 
 .button {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
   outline: none;
   border: none;
   border-radius: 5px;
   background: var(--primary);
   color: var(--white);
-  padding: 10px 30px;
+  padding: 1.2rem 2rem;
   transition: var(--transition);
   box-shadow: none;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .close-button {
@@ -79,19 +84,9 @@ a {
   color: black;
 }
 
-.button:hover {
-  background-color: var(--secondary);
-}
-
 .close-button:hover {
   background: rgba(255, 0, 0, 0.457);
 }
-
-/* hr {
-  width: 100%;
-  margin: 0 0 1rem 0;
-  border-color: var(--primary);
-} */
 
 .star {
   padding: 10px 0;
@@ -140,7 +135,7 @@ header{
   padding:1rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
-  width:35rem;
+  width:5remem;
   background: #fff;
 }
 
@@ -151,57 +146,16 @@ header{
 }
 
 .top-header .my-account .box{
-  display: flex;
-  align-items: center;
-  gap:1rem;
-  position: relative;
-  margin:1rem 0;
+  
+  
 }
 
-.top-header .my-account .box img{
-  height:10rem;
-}
-
-.top-header .my-account .box .fa-trash{
-  font-size: 2rem;
-  position: absolute;
-  top:50%; right:2rem;
-  cursor: pointer;
-  color:var(--primary);
-  transform: translateY(-50%);
-}
-
-.top-header .my-account .box .fa-trash:hover{
-  color:var(--secondary);
-}
-
-.top-header .my-account .box .content h3{
+.top-header .my-account .box .content .dropdown-item{
   color:var(--black);
   font-size: 1.7rem;
   padding-bottom: 1rem;
 }
 
-.top-header .my-account .box .content span{
-  color:var(--primary);
-  font-size: 1.6rem;
-}
-
-.top-header .my-account .box .content .quantity{
-  padding-left: 1rem;
-}
-
-.top-header .my-account .total{
-  font-size: 2.5rem;
-  padding:1rem 0;
-  text-align: center;
-  color:var(--black);
-}
-
-.top-header .my-account .btn{
-  display: block;
-  text-align: center;
-  margin:1rem;
-}
 /* ==== Top Header My Account End ==== */
 
 .header .logo{
@@ -316,11 +270,11 @@ header{
 }
 
 .header .shopping-cart .box img{
-  height:10rem;
+  height: 3rem;
 }
 
 .header .shopping-cart .box .fa-trash{
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top:50%; right:2rem;
   cursor: pointer;
@@ -334,13 +288,17 @@ header{
 
 .header .shopping-cart .box .content h3{
   color:var(--black);
-  font-size: 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   padding-bottom: 1rem;
+  width: 23rem;
+  height: 5rem;
 }
 
 .header .shopping-cart .box .content span{
   color:var(--primary);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  padd
 }
 
 .header .shopping-cart .box .content .quantity{
@@ -540,6 +498,12 @@ header{
   background: var(--secondary);
 }
 
+.top_product .button-grp i {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: var(--body);
+}
+
 /*====== Top Categories ====== */
 .top_categories .banner:hover {
   transform: perspective(10px)
@@ -561,6 +525,13 @@ header{
   margin-bottom: 2rem;  
 }
 
+.product:hover {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
 .product .product-img-wrap img {
   width: 20vw;
   height: 10vw;
@@ -572,12 +543,13 @@ header{
   background: var(--border);
 }
 
-.product:hover {
-  transition: 0.3s all;
+.product .product-content-wrap .p-name {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.product:hover img {
-  opacity: 0.7;
+.product .product-content-wrap .p-price {
+  font-size: 1.2rem;
 }
 
 .product .button-grp {
@@ -587,11 +559,12 @@ header{
 }
 
 .product:hover .button-grp {
-  transform: translateY(-150px);
+  transform: translateY(-100px);
   opacity: 1;
 }
 
 .product .button-grp i {
+  font-size: 1.7rem;
   font-weight: 700;
   background: var(--body);
 }
@@ -654,16 +627,22 @@ header{
   height: 50vh;
 }
 
-.exclusive h3 {
+.exclusive .heading {
   font-size: 2rem;
+  font-weight: 700;
+}
+
+.exclusive .sub-heading {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .exclusive a {
-  background: var(--secondary);
+  background: var(--primary);
 }
 
 .exclusive a:hover {
-  background: var(--primary);
+  background: var(--secondary);
   color: var(--white);
 }
 
@@ -688,12 +667,21 @@ header{
   color: var(--white);
 }
 
+.footer li {
+  color: var(--white);list-style: none;
+}
+
 .footer a:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .footer .first_footer {
-  background: var(--secondary);
+  background: var(--primary);
+}
+
+.footer .first_footer .newsletter .heading {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .footer .first_footer .input-group .form-control,
@@ -702,7 +690,7 @@ header{
 }
 
 .footer .first_footer .input-group .button {
-  background: var(--primary);
+  background: var(--secondary);
   color: var(--white)
 }
 
@@ -713,71 +701,55 @@ header{
 }
 
 
-.footer .third_footer ul,
-.footer .fourth_footer ul {
-  padding-left: 0;
+.footer .third_footer .heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.footer .third_footer li {
+  line-height: 2rem;
 }
 
 .footer .third_footer .social-links i {
-  background: var(--primary);
-  font-size: 20px;
+  color: white;
+  /* font-size: 20px; */
   transition: var(--transition);
   border-radius: 5px;
 }
 
-.footer .third_footer .social-links i:hover {
+/* .footer .third_footer .social-links i:hover {
   background: var(--secondary);
   color: var(--white);
-}
-
-.footer .fourth_footer .item_row {
-  border-right: 0.5px solid var(--primary);
-}
-
-.footer .fourth_footer .items {
-  float: left;
-  margin-bottom: 20px;
-}
-
-.footer .fourth_footer .item_name1 li  {
-  float: left;
-  margin: 4px 0;
-  padding: 0px 5px;
-  border-right: 0.5px solid var(--white);
-}
+} */
 
 .footer .fifth_footer p {
   font-size: 12px;
 }
 
-/* .side-menu .categories {
-  padding: 1rem !important;
-  background: var(--white);
-} */
 
 @media only screen and (max-width: 991px) {
-  body > header > nav > div > button:hover,
+  /* body > header > nav > div > button:hover,
   body > header > nav > div > button:focus {
     background-color: var(--primary);
     outline: none;
-  }
+  } */
 
-  body > nav > div > button:hover #bar,
+  /* body > nav > div > button:hover #bar,
   body > nav > div > button:focus #bar, 
   body > nav > div > button #bar {
     background-color: var(--primary);
-  }
+  } */
 
-  #navbarSupportedContent > ul {
+  /* #navbarSupportedContent > ul {
     margin: 1rem;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-  }
+  } */
 
-  #navbarSupportedContent > ul > li:nth-child(n) > a {
+  /* #navbarSupportedContent > ul > li:nth-child(n) > a {
     padding: 10px 0;
-  }
+  } */
 
   .side-menu .categories .head #close-btn {
     display: none;
@@ -875,10 +847,6 @@ header{
 
   .footer{
       text-align: center;
-  }
-
-  .footer .box-container .box .payment-img{
-      margin: 2rem auto;
   }
 
 }

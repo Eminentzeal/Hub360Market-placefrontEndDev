@@ -43,12 +43,14 @@
 
         <div class="my-account">
           <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-1.png" alt="">
             <div class="content">
-              <h3>watermelon</h3>
-              <span class="price">$4.99/-</span>
-              <span class="quantity">qty : 1</span>
+              <a class="dropdown-item py-3" href="login.html">Login</a>
+              <a class="dropdown-item py-3" href="registration.html">Register</a>
+              <a class="dropdown-item py-3" href="account.html">Profile</a>
+              <a class="dropdown-item py-3" href="">Saved Items</a>
+              <a class="dropdown-item py-3" href="">Orders</a>
+              <hr class="divider m-0">
+              <a class="dropdown-item py-3" href="">Logout</a>
             </div>
           </div>
         </div>
@@ -69,61 +71,6 @@
           </div>
         </div> -->
 
-        <!-- <div class="dropdown mini-cart">
-          <a class="nav-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bx bx-cart"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-centered border-0 p-3" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <div class="row">
-                <div class="col-12 pb-4">
-                  <div class="d-flex">
-                    <div class="col-4">
-                      <img src="assets/img/featured/oscilloscope.jpg" alt="">
-                    </div>
-                    <div class="col-6 pro-content">
-                      <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
-                      <h5 class="pro-price ms-2 mb-0">1 x $700</h5>
-                    </div>
-                    <div class="col-2 pro-remove text-end">
-                      <a href=""><i class="bi bi-x-circle-fill"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 pb-4">
-                  <div class="d-flex">
-                    <div class="col-4">
-                      <img src="assets/img/featured/oscilloscope.jpg" alt="">
-                    </div>
-                    <div class="col-6 pro-content">
-                      <h5 class="pro-name ms-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h5>
-                      <h5 class="pro-price ms-2 mb-0">1 x $700</h5>
-                    </div>
-                    <div class="col-2 pro-remove text-end">
-                      <a href=""><i class="bi bi-x-circle-fill"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 d-flex justify-content-between align-items-center py-2 border-top border-bottom">
-                  <h5 class="m-0">Subtotal:</h5>
-                  <h5 class="m-0">$700</h5>
-                </div>
-
-                <div class="col-12 mt-3">
-                  <div class="d-flex justify-content-between">
-                    <a class="button view_cart" href="cart.html">View cart</a>
-                    
-                    <a class="button check_out" href="checkout.html">Checkout</a>
-                    
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div> -->
-
     </div>
     
     <div class="header container">
@@ -132,7 +79,7 @@
         <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#products">Products</a>
-        <a href="#products">Blog</a>
+        <a href="#blog">Blog</a>
         <div class="dropdown">
           <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories 
@@ -160,40 +107,46 @@
 
       <div class="shopping-cart">
         <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-1.png" alt="">
-            <div class="content">
-                <h3>watermelon</h3>
-                <span class="price">$4.99/-</span>
-                <span class="quantity">qty : 1</span>
-            </div>
+          <i class="fas fa-trash"></i>
+          <img src="assets/img/featured/oscilloscope.jpg"  alt="">
+          <div class="content pb-4">
+              <h3>FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h3>
+              <span class="price">$4.99-</span>
+              <span class="quantity">qty : 1</span>
+          </div>
         </div>
         <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-2.png" alt="">
-            <div class="content">
-                <h3>onion</h3>
-                <span class="price">$4.99/-</span>
-                <span class="quantity">qty : 1</span>
-            </div>
+          <i class="fas fa-trash"></i>
+          <img src="assets/img/featured/oscilloscope.jpg"  alt="">
+          <div class="content pb-4">
+              <h3>FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h3>
+              <span class="price">$4.99-</span>
+              <span class="quantity">qty : 1</span>
+          </div>
         </div>
         <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-3.png" alt="">
-            <div class="content">
-                <h3>chicken</h3>
-                <span class="price">$4.99/-</span>
-                <span class="quantity">qty : 1</span>
-            </div>
+          <i class="fas fa-trash"></i>
+          <img src="assets/img/featured/oscilloscope.jpg"  alt="">
+          <div class="content pb-4">
+              <h3>FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h3>
+              <span class="price">$4.99-</span>
+              <span class="quantity">qty : 1</span>
+          </div>
         </div>
-        <div class="total"> total : $19.69/- </div>
-        <a href="#" class="btn">checkout</a>
+        
+        <div class="total mt-3">
+          <div class="d-flex justify-content-between">
+            <a class="button view_cart" href="cart.html">View cart</a>
+            
+            <a class="button check_out" href="checkout.html">Checkout</a>
+            
+          </div>
       </div>
 
       <form action="" class="login-form">
         <h3>login now</h3>
-        <input type="email" placeholder="your email" class="box">
-        <input type="password" placeholder="your password" class="box">
+        <input type="email" placeholder="Your email" class="box">
+        <input type="password" placeholder="Your password" class="box">
         <p>forget your password <a href="#">click here</a></p>
         <p>don't have an account <a href="#">create now</a></p>
         <input type="submit" value="login now" class="btn">
@@ -368,11 +321,11 @@
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
                 </div>
               </div>
@@ -389,11 +342,11 @@
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
 
                 </div>
@@ -411,11 +364,11 @@
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
                 </div>
               </div>
@@ -432,11 +385,11 @@
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
                 </div>
               </div>
@@ -446,18 +399,18 @@
           <div class="item">
             <div class="col-12">
               <div class="product_thumb rounded">
-                <div class="product-content-wrap">>
+                <div class="product-content-wrap">
                   <div class="">
                     <img src="assets/img/featured/esp32-cam-board.jpg" class="pro_image mx-auto d-block " alt="product_1">
                     <p class="text-center pro-heading my-2 p-2">Cam MB download board</p>		
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
                 </div>
               </div>
@@ -474,11 +427,11 @@
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
                 </div>
               </div>
@@ -495,11 +448,11 @@
                   </div>
 
                   <div class="button-grp">              
-                    <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
+                    <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProAddtocart"></i>
                     
-                    <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
+                    <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProQuickview"></i>
     
-                    <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
+                    <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#topProWishlist"></i>
                   </div>
                 </div>
               </div>
@@ -627,15 +580,15 @@
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
               </div>
-              <h4 class="p-name px-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
+              <h4 class="p-name px-4 py-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
               <span class="p-price">$700.00</span>
               
               <div class="button-grp">              
-                <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#featuredAddtocart"></i>
+                <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#featuredAddtocart"></i>
                 
-                <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#featuredQuickview"></i>
+                <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#featuredQuickview"></i>
 
-                <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#featuredWishlist"></i>
+                <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#featuredWishlist"></i>
               </div>
             </div>
           </div>
@@ -776,21 +729,21 @@
             </div>
             <div class="product-content-wrap">
               <div class="star">
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
-              <h4 class="p-name px-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
+              <h4 class="p-name px-4 py-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
               <span class="p-price">$700.00</span>
               
               <div class="button-grp">              
-                <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
+                <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
                 
-                <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
+                <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
 
-                <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
+                <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
               </div>
             </div>
           </div>
@@ -803,21 +756,21 @@
             </div>
             <div class="product-content-wrap">
               <div class="star">
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
-              <h4 class="p-name px-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
+              <h4 class="p-name px-4 py-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
               <span class="p-price">$700.00</span>
               
               <div class="button-grp">              
-                <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
+                <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
                 
-                <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
+                <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
 
-                <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
+                <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
               </div>
             </div>
           </div>
@@ -830,21 +783,21 @@
             </div>
             <div class="product-content-wrap">
               <div class="star">
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
-              <h4 class="p-name px-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
+              <h4 class="p-name px-4 py-2">FNIRSI 1014D 100MHz Dual Channel Digital Storage Oscilloscope</h4>
               <span class="p-price">$700.00</span>
               
               <div class="button-grp">              
-                <i class="bi bi-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
+                <i class="fa fa-cart-plus px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#addtocart"></i>
                 
-                <i class="bi bi-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
+                <i class="fa fa-eye px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#quickview"></i>
 
-                <i class="bi bi-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
+                <i class="fa fa-heart px-3 py-2 rounded" type="button" data-bs-toggle="modal" data-bs-target="#wishlist"></i>
               </div>
             </div>
           </div>
@@ -856,8 +809,8 @@
     <!-- ====== Exclusives ====== -->
     <div class="card bg-dark text-white exclusive mb-5">
       <div class="card-img-overlay">
-        <h3 class="">Exclusive offers</h3>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, natus.</p>
+        <h3 class="heading">Exclusive offers</h3>
+        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, natus.</p>
         <a class="button" href="shop.html">Shop now</a>
       </div>
     </div>
@@ -867,18 +820,14 @@
       <div class="container my-5">        
         <div class="row">
           <div class="col-md-6 col-12 py-1 py-md-0">
-            <div class="banner">
-              <a href="#">
-                <img src="assets/img/banner/ban1.jpg" class="rounded float-left img-fluid" alt="banner-1">
-              </a>
-            </div>
+            <a href="#">
+              <img src="assets/img/banner/ban1.jpg" class="rounded float-left img-fluid" alt="banner-1">
+            </a>
           </div>
           <div class="col-md-6 col-12 py-1 py-md-0">
-            <div class="banner">
-              <a href="#">
-                <img src="assets/img/banner/ban2.jpg" class="rounded  img-fluid" alt="banner-2">
-              </a>
-            </div>
+            <a href="#">
+              <img src="assets/img/banner/ban2.jpg" class="rounded  img-fluid" alt="banner-2">
+            </a>
           </div>
         </div>
       </div>
@@ -895,8 +844,8 @@
                 <img  src="assets/img/footer/1.svg" width="70" alt="">
               </span>
               <div class="newsletter d-inline-block align-middle">
-                <h4 class="text-light">Join Our Newsletter Now</h4>
-                <p class="mb-0">Register to get updates on promotions.</p>
+                <h4 class="heading">Join Our Newsletter Now</h4>
+                <p class="sub-heading">Register to get updates on promotions.</p>
               </div>
             </div>
 
@@ -936,42 +885,41 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-12 py-2 py-md-0">
-              <h3 class="mb-4">Contact Us</h3>
-              <ul class="">
-                <li class="my-3">
+              <h3 class="heading mb-4">Contact Us</h3>
+              <ul class="ps-0">
+                <li class="my-4">
                   <i class="bi bi-geo-alt me-2"></i>
                   <a href="">A108 Adam Street, New York, NY 535022</a></li>
-                <li class="my-3">
+                <li class="my-4">
                   <i class="bi bi-envelope me-2"></i>
                   <a href="">info@example.com</a></li>
-                <li class="my-3">
+                <li class="my-4">
                   <i class="bi bi-phone me-2"></i>
                   <a href="">+1 5589 55488 55</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-12 d-none d-sm-none d-md-block">
-              <h3 class="mb-4">Information</h3>
-              <ul class="">
-                <li class="my-3"><a href="">About Us</a></li>
-                <li class="my-3"><a href="">Delivery Information</a></li>
-                <li class="my-3"><a href="">Discount</a></li>
-                <li class="my-3"><a href="">Terms & Conditions</a></li>
+              <h3 class="heading mb-4">Information</h3>
+              <ul class="ps-0">
+                <li class="my-4"><a href="">About Us</a></li>
+                <li class="my-4"><a href="">Delivery Information</a></li>
+                <li class="my-4"><a href="">Discount</a></li>
+                <li class="my-4"><a href="">Terms & Conditions</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-12 d-none d-sm-none d-md-block">
-              <h3 class="mb-4">Categories</h3>
-              <ul class="">
-                <li class="my-3"><a href="">Capacitors</a></li>
-                <li class="my-3"><a href="">Resistors</a></li>
-                <li class="my-3"><a href="">Transistors</a></li>
-                <li class="my-3"><a href="">On Sale</a></li>
-                <li class="my-3"><a href="">Computer</a></li>
+              <h3 class="heading mb-4">Categories</h3>
+              <ul class="ps-0">
+                <li class="my-4"><a href="">Electricals</a></li>
+                <li class="my-4"><a href="">Electronics</a></li>
+                <li class="my-4"><a href="">Home Appliances</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-12 py-2 py-md-0">
-              <h3 class="mb-4">Our Social Networks</h3>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter p-1 me-1"></i></a>
+              <h3 class="heading mb-4">Our Social Networks</h3>
+              <div class="social-links mt-3">         
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a href="#" class="twitter"><i class="fa fa-twitter p-1 me-1"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook p-1 me-1"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram p-1 me-1"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype p-1 me-1"></i></a>
@@ -983,51 +931,6 @@
       </div>
       <hr>
 
-      <div class="fourth_footer py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-12 item_row d-sm-none d-none d-md-block">
-              <div class="items">
-                <ul class="item_name1">
-                  <li class="text-uppercase text-white font-weight-bolder">Capacitors -</li>
-                  <li><a href="#">Safety Circuits</a></li>
-                  <li><a href="#">Dining table</a></li>
-                  <li><a href="#">Timing Element</a></li>
-                  <li><a href="#">AC to DC Converters</a></li>
-                  <li><a href="#">Sensors</a></li>
-                  <li><a href="#">Tuning Circuits</a></li>
-                </ul>
-              </div>
-
-       
-              <div class="items">
-                <ul class="item_name1">
-                  <li class="text-uppercase text-white font-weight-bolder">Resistors -</li>
-                  <li><a href="#">Temperature Control</a></li>
-                  <li><a href="#">Temperature Sensor</a></li>
-                  <li><a href="#">Stool  </a></li>
-                  <li><a href="#">Dividing Voltage</a></li>
-                  <li><a href="#">Table lamp</a></li>
-                  <li><a href="#">Filter Circuits</a></li>
-                  <li><a href="#">Pillow</a></li>
-                  <li><a href="#">Fusible Resistors</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12 col-12">
-              <ul class="item_name2">
-                 <li><h6 class="text-uppercase text-white font-weight-bold pb-3">download the app</h6></li>
-                 <li>
-                   <a href="#"><img src="assets/img/footer/foo_icon1.png" class="second-img img-fluid py-md-1" alt="foo_icon1"></a>
-                   <a href="#"><img src="assets/img/footer/foo_icon2.png" class="second-img img-fluid py-md-1" alt="foo_icon2"></a>
-                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> 
-      <hr>
       <div class="fifth_footer">
         <div class="container">
           <div class="row">
