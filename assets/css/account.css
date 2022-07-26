@@ -8,25 +8,29 @@
 
 .nav-pills li .nav-link  {
   color: var(--black);
+  font-size: 1.5rem;
 }
 
 .nav-pills li .nav-link:hover  {
   background: var(--secondary);
   color: var(--white);
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .nav-pills .nav-link.active {
   background: var(--border);
   color: var(--black);
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
-.card .card-header {
+/* .card .card-header {
   font-size: 1.3rem;
   font-weight: 600;
-  /* border: 1px solid #00000020; */
   background-color: var(--secondary);
   color: var(--white);
-}
+} */
 
 .card .card-header a {
   color: white;
@@ -40,26 +44,46 @@
   transition: var(--transition);
 }
 
+/* ==== Profile Start ==== */
 .profile .list-group-item .title {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.5rem;
+}
+
+.profile .list-group-item .content {
+  font-size: 1.3rem;
+  color: grey;
+  line-height: 1.5rem;
+}
+/* ==== Profile End ==== */
+
+/* ==== Orders Start ==== */
+.orders .list-group-item .pro-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
 .orders .list-group-item .order-no {
-  font-size: 14px;
+  font-size: 1.5rem;
   color: grey;
 }
 
 .orders .list-group-item .d-status {
   background: var(--secondary);
-  font-size: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--white);
-  padding: 0px 2px;
+  padding: 2px;
 }
 
-.orders .list-group-item .d-btn {
-  color: var(--secondary);
+.orders .list-group-item .d-date {
+  font-size: 1.2rem;
 }
+
+/* .orders .list-group-item .d-btn {
+  color: var(--secondary);
+} */
 
 .orders .list-group-item .d-btn:hover {
   opacity: .8;
@@ -68,16 +92,20 @@
 .orders .list-group-item a {
   font-weight: 600;
   font-size: 14px;
-  color: var(--black);
+  /* color: var(--black); */
 }
 
-.orders .list-group-item a:hover {
+/* .orders .list-group-item a:hover {
   color: var(--secondary);
-}
+} */
+/* ==== Orders End ==== */
 
+/* ==== Wishlist Start==== */
 .wishlist .pro-name a,
 .wishlist a i:hover {
   color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .wishlist .pro-name a:hover,
@@ -85,36 +113,81 @@
   color: var(--secondary);
 }
 
-.orders .pro-qty,
-.wishlist .pro-price {
-  font-size: 12px;
+/* .orders .pro-qty, */
+.wishlist .pro-qty {
+  font-size: 1.3rem;
 }
 
 .wishlist .pro-price {
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .wishlist .list-group-item .button:hover {
   color: var(--white);
 }
+/* ==== Wishlist End ==== */
 
-.form-floating input,
-.details select {
-  border: none;
-  border-bottom: 1px solid var(--border);
-  border-radius: 0;
+/* ==== Change Password Start==== */
+ /* ==== Add New Address Modal Form ==== */
+ .changePwd-form,
+ .details-form,
+ .add-new-address-form {
+  padding:2rem;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
 }
 
-.form-floating input:focus,
-.details select:focus  {
-  outline: none;
-  box-shadow: none;
-  border-color: var(--secondary);
+.changePwd-form h3,
+.details-form h3,
+.add-new-address-form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
-.changePwd .button:hover
-.wishlist .list-group-item .button:hover {
-color: var(--white);
+.changePwd-form .box,
+.details-form .box,
+.add-new-address-form .box,
+.edit-existing-address-form .box{
+  width: 100%;
+  margin:.7rem 0;
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+}
+
+.changePwd-form p,
+.details-form p,
+.add-new-address-form p,
+.edit-existing-address-form p{
+  font-size: 1.4rem;
+  padding:.5rem 0;
+  color:var(--primary);
+}
+
+.changePwd-form p a,
+.details-form p a,
+.add-new-address-form p a,
+.edit-existing-address-form p a{
+  color:var(--secondary);
+}
+
+/* .changePwd-form, p a:hover
+.details-form p a:hover,
+.add-new-address-form p a:hover,
+.edit-existing-address-form p a:hover{
+  text-decoration: underline;
+} */
+
+/* ==== Change Password End */
+
+.accordion-button {
+  font-size: 1.5rem;
 }
 
 .accordion-button:focus {
@@ -123,6 +196,8 @@ color: var(--white);
   border: none;
   box-shadow: none;
   color: var(--white);
+  font-size: 1.7rem;
+  font-weight: 600;
 
 }
 
@@ -157,4 +232,31 @@ color: var(--white);
   height: 50vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+
+.modal-header {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.modal-header i:hover {
+  color: var(--secondary);
+}
+
+.list-group-item .sub-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+} 
+
+
+.list-group-item .content {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: grey;
+}
+
+.list-group-item span,
+.list-group-item .set-default {
+  color: var(--secondary);
 }

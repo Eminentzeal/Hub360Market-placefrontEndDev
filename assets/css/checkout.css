@@ -14,12 +14,14 @@
   font-weight: 600;
 }
 
-.list-group-item .sub-heading {
+.list-group-item .sub-heading,
+.modal .sub-heading {
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-.list-group-item .card-body .content {
+.list-group-item .card-body .content,
+.modal .content {
   font-size: 1.3rem;
   line-height: 2rem;
   color: grey;
@@ -74,10 +76,67 @@
   text-decoration: underline;
 }
 
+.modal-header {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.modal-header i:hover {
+  color: var(--secondary);
+}
+
 .modal-body .card-header {
   background: var(--white);
   color: var(--secondary);
 }
+
+ /* ==== Add New Address Modal Form ==== */
+.addNewAddress-form{
+  padding:2rem;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.addNewAddress-form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.addNewAddress-form .box{
+  width: 100%;
+  margin:.7rem 0;
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+}
+
+.addNewAddress-form p{
+  font-size: 1.4rem;
+  padding:.5rem 0;
+  color:var(--primary);
+}
+
+.addNewAddress-form p a{
+  color:var(--secondary);
+}
+
+.addNewAddress-form p a:hover{
+  text-decoration: underline;
+}
+
+.addNewAddress-form .fb-btn {
+  background: #1878f2;
+}
+
+.addNewAddress-form .goo-btn {
+  background: #e13f2a;
+}
+
 
 #changeCheckoutAddress .card-body .content {
   font-size: 12px;
@@ -113,3 +172,4 @@
 #changePaymentMethod p {
   font-size: 13px;
 }
+

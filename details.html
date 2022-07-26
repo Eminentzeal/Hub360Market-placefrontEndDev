@@ -148,56 +148,44 @@
   <main>
     <section class="container account py-4">
       <div class="card details border-0">
-        <div class="card-header py-3">
-          <h4 class="m-0">Details</h4>
+        <div class="card-header main py-4">
+          Details
         </div>
-        <div class="mx-3 mb-4">
+        <div class="mx-4 mb-4">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control mt-3" id="firstName" placeholder="First Name" required >
-                <label for="firstName">First Name</label>
+            <form action="" class="details-form row">
+              <div class="col-lg-6">
+                <input type="text" placeholder="Your Firstname" class="box">
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control mt-3" id="lastName" placeholder="First Name" required >
-                <label for="lastName">Last Name</label>
+              
+              <div class="col-lg-6">
+                <input type="text" placeholder="Your Lastname" class="box">
               </div>
-            </div>
-          
-            <div class="col-12 col-md-6">
-              <div class="form-floating">
-                <input type="email" class="form-control mt-3" id="email" placeholder="Email" required >
-                <label for="email">Email</label>
+
+              <div class="col-12">
+                <input type="email" placeholder="Your Email Address" class="box">
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-floating">
-                <input type="number" class="form-control mt-3" id="phoneNumber" placeholder="Phone Number" required>
-                <label for="phoneNumber">Phone Number</label>
+  
+              <div class="col-12">
+                <input type="phone number" placeholder="Your phone number" class="box">
               </div>
-            </div>
-          
-            <div class="col-12 col-md-6">
-              <div class="form-floating">
-                <select class="form-select mt-3" id="floatingSelect">
-                  <option selected>Select option</option>
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
+  
+              <div class="col-lg-6">
+                <select class="box">
+                  <option selected>Gender (Optional)</option>
+                  <option value="1">Male/option>
+                  <option value="2">Female/option>
                 </select>
-                <label for="floatingSelect">Gender (Optional)</label>
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-floating">
-                <input type="date" class="form-control mt-3" id="phoneNumber" placeholder="Birthday" required>
-                <label for="birthday">Birthday (Optional)</label>
+              
+              <div class="col-lg-6">
+                <input type="date" placeholder="Your Birthday (Optional)" class="box">
               </div>
-            </div>
+              
+              <input type="submit" value="Save" class="button my-4">
+            </form>
           </div>
         </div>
-        <a href="" class="button text-center m-3 py-3">Submit</a>
       </div>
     </section>
     
