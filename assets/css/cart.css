@@ -1,36 +1,32 @@
-.card-header {
-  background: var(--secondary);
-  color: var(--white);
-}
-
-.card .list-group .bi-trash-fill {
+.card .list-group .fas {
   color: var(--secondary);
 }
 
-.card .list-group .bi-trash-fill:hover {
-  color: var(--primary);
+.card .list-group .fa {
+  font-size: 1rem;
 }
 
-.card .list-group h5 {
+.card .list-group .fas:hover {
+  color: var(--primary);
+  box-shadow: var(--box-shadow);
+}
+
+.card .list-group .pro-name {
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
-.card .list-group a {
-  color: var(--black);
+.card .list-group .pro-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
 }
 
-.card .list-group a.button {
-  color: var(--white);
-}
-
-.cart_items a:hover {
-  color: var(--secondary);
-}
 
 .card .list-group input {
   width: 30%;
-  background: var(--body);
-  padding: 8px 8px 12px;
+  background: var(--border);
+  font-weight: 600;
 }
 
 .card .list-group input[type=number]::-webkit-inner-spin-button {
@@ -41,11 +37,21 @@
   outline: none;
 }
 
-.cart .icon {
+.card .summary h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.card .summary h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cart .summary .icon {
   width: 3rem;
 }
 
-.b-prot {
+.b-protection {
   font-size: 14px;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
 }

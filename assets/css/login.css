@@ -1,48 +1,55 @@
-.registration {
+.login {
   width: 70%;
 }
 
-.registration .bg-img {
+.login .bg-img {
   background: url(/assets/img/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
 }
 
-.registration .bg-img .bg-overlay {
+.login .bg-img .bg-overlay {
   background-color: rgb(81 81 81 / 28%);
   height: 100%;
 }
 
-.registration .title {
-  padding: 15rem 2rem;
-  color: var(--white);
+.login-form{
+  padding:2rem;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
 }
 
-.registration .title p {
-  font-size: 14px;
-}
-.form label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-
-.form .form-control,
-.form .form-select  {
+.login-form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
   color: var(--black);
-  border: 1px solid var(--border);
-  font-size: 14px;
-  box-shadow: none;
 }
 
-/* .reg-btn {
-  background: var(--primary);
+.login-form .box{
+  width: 100%;
+  margin:.7rem 0;
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
 }
 
-.reg-btn:hover {
-  background: var(--black);
-} */
+.login-form p{
+  font-size: 1.4rem;
+  padding:.5rem 0;
+  color:var(--primary);
+}
+
+.login-form p a{
+  color:var(--secondary);
+}
+.login-form p a:hover{
+  text-decoration: underline;
+}
 
 .fb-btn {
   background: #1878f2;
@@ -65,9 +72,10 @@
   color: var(--primary);
 }
 
-
 @media only screen and (max-width: 991px) {
   body > section > div > div.col.p-5.bg-white > div > p{
     font-size: 12px;
   }
 }
+
+
