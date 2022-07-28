@@ -156,15 +156,49 @@
 .edit-existing-address-form p a{
   color:var(--secondary);
 }
-
-/* .changePwd-form, p a:hover
-.details-form p a:hover,
-.add-new-address-form p a:hover,
-.edit-existing-address-form p a:hover{
-  text-decoration: underline;
-} */
-
 /* ==== Change Password End */
+
+.shippingAddress .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.shippingAddress .list-group-item i:hover {
+  color: var(--secondary);
+  transform: scale(1.2);
+}
+
+.shippingAddress .default {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.shippingAddress .set-default {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.shippingAddress .set-default:hover {
+  color: var(--secondary);
+}
+
+.shippingAddress .content {
+  font-size: 12px;
+  color: grey;
+}
+
+.shippingAddress .content {
+  font-size: 12px;
+  color: grey;
+}
+
+.scroll {
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
 .accordion-button {
   font-size: 1.5rem;
@@ -190,30 +224,18 @@
   background: var(--body);
 }
 
-.accordion-body .list-group-item {
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
-}
-
 .add-btn {
   font-size: 12px;
   cursor: pointer;
 }
 
-.shippingAddress .title {
-  font-weight: 600;
+.accordion-body .add-btn {
+  color: var(--secondary);
 }
 
-.shippingAddress .content {
-  font-size: 12px;
-  color: grey;
+.accordion-body .add-btn:hover {
+  text-decoration: underline;
 }
-
-.scroll {
-  height: 50vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 
 .modal-header {
   font-size: 1.7rem;

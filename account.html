@@ -423,39 +423,18 @@
 
               <!-- ==== Shipping Address Large and medium Screen ( >=768px ) ==== -->
               <div class="tab-pane fade" id="v-pills-shippingAddress" role="tabpanel" aria-labelledby="v-pills-shippingAddress-tab" tabindex="0">
-                <div class="card shippingAddress border-0">
-                  <div class="card row shippingAddress border-0" >
-                    <div class="card-header main py-4 d-flex justify-content-between align-items-center">
-                      Shipping Address
-                      <div class="add-btn" type="button" data-bs-toggle="modal" data-bs-target="#addNewAddress">
-                        <i class="bi bi-plus-circle-fill"></i>
-                        <span>Add new Address</span>
-                      </div>
+                <div class="card row shippingAddress border-0" >
+                  <div class="card-header main py-4 d-flex justify-content-between align-items-center">
+                    Shipping Address
+                    <div class="add-btn" type="button" data-bs-toggle="modal" data-bs-target="#addNewAddress">
+                      <i class="bi bi-plus-circle-fill"></i>
+                      <span>Add new Address</span>
                     </div>
-                    <div class="card-body border-bottom">
-                      <ul class="list-group">
-                        <li class="list-group-item p-0 border-0">
-                          <div class="d-flex align-items-center justify-content-between">
-                            <div class="">
-                              <h5 class="title">John Deo</h5>
-                              <p class="mb-2 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
-                              <p class="mb-2 content">+234 8149594939</p>
-                            </div>
-                            <div class="text-end">
-                              <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
-                            </div>
-                          </div>
-                          <span>Default</span>
-                        </li>
-                        <li class="list-group-item p-0 mt-2 border-0">
-                          
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="card-body border-bottom">
-                      <ul class="list-group">
-                        <li class="list-group-item p-0 border-0 d-flex align-items-center justify-content-between">
+                  </div>
+                  <div class="card-body border-bottom">
+                    <ul class="list-group">
+                      <li class="list-group-item p-0 border-0">
+                        <div class="d-flex align-items-center justify-content-between">
                           <div class="">
                             <h5 class="title">John Deo</h5>
                             <p class="mb-2 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
@@ -464,129 +443,35 @@
                           <div class="text-end">
                             <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
                           </div>
-                        </li>
-                        <li class="list-group-item p-0 mt-3 border-0">
-                          <a class="set-default" href="">Set as default</a>
-                        </li>
-                      </ul>
-                    </div>
+                        </div>
+                        <span class="default">Default</span>
+                      </li>
+                      <li class="list-group-item p-0 mt-2 border-0">
+                        
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body border-bottom">
+                    <ul class="list-group">
+                      <li class="list-group-item p-0 border-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="">
+                            <h5 class="title">John Deo</h5>
+                            <p class="mb-2 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                            <p class="mb-2 content">+234 8149594939</p>
+                          </div>
+                          <div class="text-end">
+                            <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
+                          </div>
+                        </div>
+                        <a class="set-default" href="">Set as default</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>              
               <!-- ==== End of Shipping Address Large and medium Screen ( >=768px ) ==== -->
-
-              <!-- ==== Add New Address modal ==== -->
-              <div class="modal fade" id="addNewAddress" aria-hidden="true" aria-labelledby="addNewAddressLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header py-4">Add new address
-                      <i class="fa fa-times float-right" aria-hidden="true" data-bs-dismiss="modal" aria-label="Close"></i>
-                    </div>
-                    <!-- ==== Add new address form ==== -->
-                    <div class="card details border-0">
-                      
-                      <div class="row mx-3">
-                        <form action="" class="add-new-address-form row">
-                          <div class="col-lg-6">
-                            <input type="text" placeholder="Your Firstname" class="box">
-                          </div>
-                          
-                          <div class="col-lg-6">
-                            <input type="text" placeholder="Your Lastname" class="box">
-                          </div>
-              
-                          <div class="col-12">
-                            <input type="phone number" placeholder="Your phone number" class="box">
-                          </div>
-              
-                          <div class="col-12">
-                            <input type="text" placeholder="Addresss e.g 1234 Main St" class="box">
-                          </div>
-              
-                          <div class="col-lg-6">
-                            <select class="box">
-                              <option selected>Select State</option>
-                              <option value="1">Abia</option>
-                                <option value="2">Adamawa</option>
-                                <option value="2">Adamawa</option>
-                            </select>
-                          </div>
-                          <div class="col-lg-6">
-                            <input type="text" placeholder="City" class="box" id="inputCity">
-                          </div>
-
-                          <div class="col-12">
-                            <input type="text" placeholder="Zip/postal code" class="box">
-                          </div>
-
-                          <input type="submit" value="Save" class="button my-4">
-                        </form>
-                      </div>
-                      
-                    </div>
-                    <!-- ==== End of Add new address form ==== -->
-                  </div>
-                </div>
-              </div>
-              <!-- ====End of Add New Address modal ==== -->
-
-              <!-- ==== Edit Existing Address modal ==== -->
-              <div class="modal fade" id="editExistingAddress" aria-hidden="true" aria-labelledby="editExistingAddressLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header py-4">
-                      Edit existing address
-                      <i class="fa fa-times float-right" aria-hidden="true" data-bs-dismiss="modal" aria-label="Close"></i>
-                    </div>
-
-                    <!-- ==== Edit Existing address form ==== -->
-                    <div class="card details">
-                        <div class="row mx-3">
-                          <form action="" class="edit-existing-address-form row">
-                            <div class="col-lg-6">
-                              <input type="text" placeholder="Your Firstname" class="box">
-                            </div>
-                            
-                            <div class="col-lg-6">
-                              <input type="text" placeholder="Your Lastname" class="box">
-                            </div>
-                
-                            <div class="col-12">
-                              <input type="phone number" placeholder="Your phone number" class="box">
-                            </div>
-                
-                            <div class="col-12">
-                              <input type="text" placeholder="Addresss e.g 1234 Main St" class="box">
-                            </div>
-                
-                            <div class="col-lg-6">
-                              <select class="box">
-                                <option selected>Select State</option>
-                                <option value="1">Abia</option>
-                                  <option value="2">Adamawa</option>
-                                  <option value="2">Adamawa</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-6">
-                              <input type="text" placeholder="City" class="box" id="inputCity">
-                            </div>
-  
-                            <div class="col-12">
-                              <input type="text" placeholder="Zip/postal code" class="box">
-                            </div>
-  
-                            <input type="submit" value="Save" class="button my-4">
-                          </form>
-                        </div>
-                      
-                     
-                    </div>
-                    <!-- ==== End of Edit Existing address form ==== -->
-
-                  </div>
-                </div>
-              </div>
-              <!-- ====End of Edit Existing Address modal ==== -->
             </div>
           </div>
         </div>
@@ -849,9 +734,181 @@
           </div>
         </div>
         <!-- ==== End of Details Small Screen Screen ( <=767px ) ==== -->
+
+        <!-- ==== Shipping Address Small Screen Screen ( <=767px ) ==== -->
+        <div class="accordion-item shippingAddress mb-4">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Shipping Address
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="card shippingAddress border-0" >
+                <div class="add-btn p-4" type="button" data-bs-toggle="modal" data-bs-target="#addNewAddress">
+                  <i class="bi bi-plus-circle-fill"></i>
+                  <span>Add new Address</span>
+                </div>
+                
+                
+                  <ul class="list-group p-4 box-shadow-0">
+                    <li class="list-group-item p-0 pb-5 border-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="">
+                          <h5 class="title">John Deo</h5>
+                          <p class="mb-2 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                          <p class="mb-2 content">+234 8149594939</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
+                        </div>
+                      </div>
+                      <span class="default">Default</span>
+                    </li>
+                    <li class="list-group-item p-0 pb-5 border-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="">
+                          <h5 class="title">John Deo</h5>
+                          <p class="mb-2 content">Bayelsa Road, Trademore Estate Lugbe Abuja Nigeria, 27010</p>
+                          <p class="mb-2 content">+234 8149594939</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="bi bi-pencil-fill" type="button" data-bs-toggle="modal" data-bs-target="#editExistingAddress"></i>
+                        </div>
+                      </div>
+                      
+                      <a class="set-default" href="">Set as default</a>
+                    </li>
+                   
+                  </ul>
+               
+
+              
+                  
+                   
+                    
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==== End of Shipping Address Small Screen Screen ( <=767px ) ==== -->
       </div>
     </section>
     <!-- ====End of Small Screen Screen ( <=767px ) ==== -->
+
+
+
+    <!--======================= Modals =======================  -->
+    <!-- ==== Add New Address modal ==== -->
+    <div class="modal fade" id="addNewAddress" aria-hidden="true" aria-labelledby="addNewAddressLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header py-4">Add new address
+            <i class="fa fa-times float-right" aria-hidden="true" data-bs-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <!-- ==== Add new address form ==== -->
+          <div class="card details border-0">
+            
+            <div class="row mx-3">
+              <form action="" class="add-new-address-form row">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your Firstname" class="box">
+                </div>
+                
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your Lastname" class="box">
+                </div>
+    
+                <div class="col-12">
+                  <input type="phone number" placeholder="Your phone number" class="box">
+                </div>
+    
+                <div class="col-12">
+                  <input type="text" placeholder="Addresss e.g 1234 Main St" class="box">
+                </div>
+    
+                <div class="col-lg-6">
+                  <select class="box">
+                    <option selected>Select State</option>
+                    <option value="1">Abia</option>
+                      <option value="2">Adamawa</option>
+                      <option value="2">Adamawa</option>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" placeholder="City" class="box" id="inputCity">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" placeholder="Zip/postal code" class="box">
+                </div>
+
+                <input type="submit" value="Save" class="button my-4">
+              </form>
+            </div>
+            
+          </div>
+          <!-- ==== End of Add new address form ==== -->
+        </div>
+      </div>
+    </div>
+    <!-- ====End of Add New Address modal ==== -->
+
+    <!-- ==== Edit Existing Address modal ==== -->
+    <div class="modal fade" id="editExistingAddress" aria-hidden="true" aria-labelledby="editExistingAddressLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header py-4">
+            Edit existing address
+            <i class="fa fa-times float-right" aria-hidden="true" data-bs-dismiss="modal" aria-label="Close"></i>
+          </div>
+
+          <!-- ==== Edit Existing address form ==== -->
+          <div class="card details">
+            <div class="row mx-3">
+              <form action="" class="edit-existing-address-form row">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your Firstname" class="box">
+                </div>
+                
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your Lastname" class="box">
+                </div>
+    
+                <div class="col-12">
+                  <input type="phone number" placeholder="Your phone number" class="box">
+                </div>
+    
+                <div class="col-12">
+                  <input type="text" placeholder="Addresss e.g 1234 Main St" class="box">
+                </div>
+    
+                <div class="col-lg-6">
+                  <select class="box">
+                    <option selected>Select State</option>
+                    <option value="1">Abia</option>
+                      <option value="2">Adamawa</option>
+                      <option value="2">Adamawa</option>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" placeholder="City" class="box" id="inputCity">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" placeholder="Zip/postal code" class="box">
+                </div>
+
+                <input type="submit" value="Save" class="button my-4">
+              </form>
+            </div>
+          </div>
+          <!-- ==== End of Edit Existing address form ==== -->
+        </div>
+      </div>
+    </div>
+    <!-- ====End of Edit Existing Address modal ==== -->
   </main>
 
   <footer>

@@ -28,7 +28,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* scroll-padding-top: 7rem; */
+  scroll-padding-top: 7rem;
   list-style-type: none;
 }
 
@@ -39,7 +39,6 @@ body {
   letter-spacing: 0.03rem !important;
   color: var(--black);
 }
-
 
 a {
   text-decoration: none;
@@ -63,19 +62,6 @@ a {
   background-color: var(--secondary);
   color: var(--white);
 }
-/* 
-.close-button {
-  font-size: 1.3rem;
-  font-weight: 700;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background: red;
-  color: var(--white);
-  padding: 10px 30px;
-  transition: var(--transition);
-  box-shadow: none;
-} */
 
 .count-btn {
   padding: 12px;
@@ -83,10 +69,6 @@ a {
   color: black;
 }
 
-/* .close-button:hover {
-  background: rgba(255, 0, 0, 0.457);
-  color: var(--white);
-} */
 
 .star {
   padding: 10px 0;
@@ -122,7 +104,6 @@ header{
 }
 
 /* ==== Top Header My Account ==== */
-
 .top-header .offer{
   font-size: 1.7rem;
   background: var(--secondary);
@@ -164,7 +145,6 @@ header{
 }
 
 /* ==== Top Header My Account End ==== */
-
 .header .logo{
   width: 50px;
 }
@@ -187,7 +167,6 @@ header{
 
 .header .navbar .dropdown-menu a.dropdown-item:hover {
   background: transparent;
-  
 }
 
 .header .icons div{
@@ -250,7 +229,6 @@ header{
 .header .search-form label:hover{
   color:var(--secondary);
 }
-
 
 /* ==== Header Shopping Cart Start ==== */
 .header .shopping-cart{
@@ -373,7 +351,6 @@ header{
 .header .login-form p a:hover{
   text-decoration: underline;
 }
-
 /* ==== Header Navigation End==== */
 
 
@@ -386,7 +363,6 @@ header{
 
 .breadcrumb-item a {
   color: var(--white);
-
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -424,6 +400,17 @@ header{
   text-decoration: none;
 }
 
+.dropdown-item:active,
+.dropdown-item:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--black);
+}
+
+.side-menu a:hover {
+  color: var(--secondary);
+}
+
 .side-menu .categories ul li ul {
   box-shadow: var(--box-shadow);  
   font-size: 1.7rem;
@@ -434,6 +421,8 @@ header{
   margin-right: 8px;
   float: right;
 }
+
+
 
 /* ====== Services ====== */
 .services .service {
