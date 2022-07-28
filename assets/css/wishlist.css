@@ -1,21 +1,28 @@
-.wishlist .row {
-  background: #fff;
-  padding-top: 15px;
-  padding-bottom: 13px;
-}
 
-.wishlist i:hover {
-  color: var(--secondary);
-}
-
-.wishlist h5 {
+/* ==== Wishlist Start==== */
+.wishlist .pro-name a,
+.wishlist a i:hover {
+  color: var(--black);
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
-.wishlist a {
-  color: var(--black);
-}
-
-.wishlist a:hover {
+.wishlist .pro-name a:hover,
+.wishlist a i:hover {
   color: var(--secondary);
 }
+
+/* .orders .pro-qty, */
+.wishlist .pro-qty {
+  font-size: 1.3rem;
+}
+
+.wishlist .pro-price {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.wishlist .list-group-item .button:hover {
+  color: var(--white);
+}
+/* ==== Wishlist End ==== */

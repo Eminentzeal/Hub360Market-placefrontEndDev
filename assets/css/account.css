@@ -31,13 +31,12 @@
 }
 
 .card .card-header a:hover {
-  background: white;
-  color: var(--secondary);
-  border-radius: 3px;
+  transform: scale(1.2);
   transition: var(--transition);
 }
 
 /* ==== Profile Start ==== */
+
 .profile .list-group-item .title {
   font-weight: 600;
   font-size: 1.5rem;
@@ -64,6 +63,7 @@
 
 .orders .list-group-item .d-status {
   background: var(--secondary);
+  border-radius: 2px;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--white);
@@ -234,9 +234,4 @@
   font-size: 1.3rem;
   line-height: 2rem;
   color: grey;
-}
-
-.list-group-item span,
-.list-group-item .set-default {
-  color: var(--secondary);
 }

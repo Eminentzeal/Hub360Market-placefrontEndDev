@@ -16,12 +16,18 @@
   color: grey;
 }
 
-.order-details .qty, .date, .price {
+.order-details .qty, .date{
   font-size: 1.5rem;
+}
+
+.order-details .price {
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .order-details .list-group-item .d-status {
   background: var(--secondary);
+  border-radius: 2px;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--white);
