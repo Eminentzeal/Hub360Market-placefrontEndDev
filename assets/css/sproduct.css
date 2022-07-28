@@ -1,3 +1,7 @@
+.sproduct .img-content {
+  position: sticky;
+  top: 10%;
+}
 .small-img-group {
   display: flex;
   justify-content: space-between;
@@ -8,7 +12,7 @@
   cursor: pointer;
 }
 
-.sproduct select {
+/* .sproduct select {
   display: block;
   padding: 5px 10px;
 }
@@ -23,5 +27,50 @@
 .sproduct input:focus,
 .sproduct select:focus {
   outline: none;
+} */
+
+.sproduct .pro-name {
+  font-size: 3rem;
+  font-weight: 600;
 }
 
+.sproduct .pro-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.sproduct .list-group {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.sproduct .sp-text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.sp_rating .svg-inline--fa.fa-star.fa-w-18 {
+  width: 12px;
+  color: goldenrod;
+  margin: 20px 0;
+}
+
+.sproduct input {
+  width: 10%;
+  background: var(--border);
+  font-weight: 600;
+}
+
+.sproduct input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.sproduct input:focus {
+  outline: none;
+}
+
+.sproduct .button {
+  width: 20rem;
+  padding: 2rem;
+}

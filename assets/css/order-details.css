@@ -1,0 +1,38 @@
+
+.order-details .list-group-item .sub-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.order-details .list-group-item .pro-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.order-details .order-no {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.order-details .qty, .date, .price {
+  font-size: 1.5rem;
+}
+
+.order-details .list-group-item .d-status {
+  background: var(--secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  padding: 2px;
+}
+
+.order-details .list-group-item .d-date {
+  font-size: 1.2rem;
+}
+
+.order-details .list-group-item a {
+  font-weight: 600;
+  font-size: 14px;
+}

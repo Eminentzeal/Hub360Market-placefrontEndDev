@@ -25,13 +25,6 @@
   font-weight: 600;
 }
 
-/* .card .card-header {
-  font-size: 1.3rem;
-  font-weight: 600;
-  background-color: var(--secondary);
-  color: var(--white);
-} */
-
 .card .card-header a {
   color: white;
 
@@ -81,23 +74,10 @@
   font-size: 1.2rem;
 }
 
-/* .orders .list-group-item .d-btn {
-  color: var(--secondary);
-} */
-
-.orders .list-group-item .d-btn:hover {
-  opacity: .8;
-}
-
 .orders .list-group-item a {
   font-weight: 600;
   font-size: 14px;
-  /* color: var(--black); */
 }
-
-/* .orders .list-group-item a:hover {
-  color: var(--secondary);
-} */
 /* ==== Orders End ==== */
 
 /* ==== Wishlist Start==== */
