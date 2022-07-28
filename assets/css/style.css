@@ -4,7 +4,6 @@
   --primary: #1cacd9;
   --white: #fff;
   --black:#130f40;
-
   --body: #f6f6f6;
   --border: #eee;
   --dropdown-box-shadow: 0 0px 15px -8px var(--primary);
@@ -64,9 +63,9 @@ a {
   background-color: var(--secondary);
   color: var(--white);
 }
-
+/* 
 .close-button {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
   outline: none;
   border: none;
@@ -76,7 +75,7 @@ a {
   padding: 10px 30px;
   transition: var(--transition);
   box-shadow: none;
-}
+} */
 
 .count-btn {
   padding: 12px;
@@ -84,9 +83,10 @@ a {
   color: black;
 }
 
-.close-button:hover {
+/* .close-button:hover {
   background: rgba(255, 0, 0, 0.457);
-}
+  color: var(--white);
+} */
 
 .star {
   padding: 10px 0;
@@ -394,7 +394,7 @@ header{
 }
 
 .breadcrumb-item.active {
-  color: var(--secondary);
+  color: yellow;
 }
 
 
@@ -524,6 +524,7 @@ header{
 .featured .sub-heading {
   font-size: 1.5rem;
   font-weight: 400;
+  color: var(--secondary);
 }
 
 .product{
@@ -585,47 +586,6 @@ header{
   overflow: hidden;
 }
 
-.modal h5 {
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.modal h4 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.modal a {
-  /* color: var(--secondary); */
-  font-weight: 600;
-}
-
-#featuredQuickview .modal-dialog {
-  max-width: 800px;
-}
-
-#featuredQuickview > div > div > div.modal-body > div > div:nth-child(2) > div > div.d-block.my-3 > input {
-  background: var(--body);
-  padding: 8px 8px 12px;
-  width: 10%;
-
-}
-
-#featuredQuickview > div > div > div.modal-body > div > div:nth-child(2) > div > div.d-block.my-3 > input[type=number]::-webkit-inner-spin-button {
-  appearance: none;
-}
-
-#featuredQuickview > div > div > div.modal-body > div > div:nth-child(2) > div > div.d-block.my-3 > input:focus {
-  outline: none;
-}
-
-
-@media only screen and (max-width: 991px) {
-  #featuredQuickview .modal-dialog {
-    max-width: 800px;
-  }
-}
-
 /* ====== Exclusives ====== */
 .exclusive{
   background: url(/assets/img/exclu.jpg);
@@ -657,12 +617,63 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;align-items: center;
-
 }
 
 
-/* ====== footer ====== */
 
+.modal-header i:hover {
+  color: var(--secondary);
+}
+
+.modal-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.modal .pro-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.modal .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal a {
+  font-weight: 600;
+}
+
+.modal#featuredQuickview i {
+  font-size: 1rem;
+}
+
+.modal#featuredQuickview input {
+  font-weight: 600;
+  background: var(--body);
+  padding: 11px 8px 12px;
+}
+
+.modal#featuredQuickview input:focus {
+  outline: none;
+}
+
+.modal#featuredQuickview input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.modal#featuredWishlist .login {
+  color: var(--secondary);
+}
+
+.modal#featuredWishlist .login:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ====== footer ====== */
 .footer {
   background: var(--black);
   color: var(--white);
