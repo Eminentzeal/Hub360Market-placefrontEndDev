@@ -23,6 +23,7 @@
 
 .reg-form h3{
   font-size: 2.5rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
 }

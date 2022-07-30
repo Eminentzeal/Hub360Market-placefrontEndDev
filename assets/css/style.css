@@ -770,6 +770,15 @@ header{
   font-size: 12px;
 }
 
+.footer .social-links i {
+  background: var(--primary);
+  color: var(--primary);
+}
+
+.footer .social-links i:hover {
+  background: var(--secondary);
+}
+
 @media only screen and (max-width: 991px) {
   .side-menu .categories .head #close-btn {
     display: none;
