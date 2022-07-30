@@ -12,7 +12,7 @@
   --breadcrumb: linear-gradient(107deg, rgba(28,151,217,1) 0%, rgba(28,172,217,1) 85%, rgba(28,148,217,1) 100%); 
   --outline:.1rem solid rgba(0,0,0,.1);
   --outline-hover:.2rem solid var(--black);
-  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  --box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
 }
 
 * {
@@ -46,7 +46,7 @@ a {
 } 
 
 .button {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   outline: none;
   border: none;
@@ -56,6 +56,7 @@ a {
   padding: 1.2rem 2rem;
   transition: var(--transition);
   box-shadow: none;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -63,12 +64,21 @@ a {
   color: var(--white);
 }
 
+.d-btn {
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.d-btn:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
 .count-btn {
   padding: 12px;
   background: var(--border);
   color: black;
 }
-
 
 .star {
   padding: 10px 0;
@@ -169,7 +179,7 @@ header{
   background: transparent;
 }
 
-.header .icons div{
+.header .icons .fas{
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
@@ -182,9 +192,25 @@ header{
   text-align: center;
 }
 
-.header .icons div:hover{
+.header .icons .fas:hover{
   background: var(--secondary);
   color:#fff;
+}
+
+.header .cart {
+  position: relative;
+}
+
+.header .cartAmount {
+  position: absolute;
+  top: -9px;
+  right: -6px;
+  background: var(--secondary);
+  color: var(--white);
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: .5rem;
+  border-radius: .5rem;
 }
 
 #menu-btn{
@@ -303,7 +329,6 @@ header{
 }
 /* ==== Header Shopping Cart Start ==== */
 
-
 /* ==== Header Login Form Start ==== */
 .header .login-form{
   position: absolute;
@@ -353,7 +378,6 @@ header{
 }
 /* ==== Header Navigation End==== */
 
-
 .breadcrumb-nav {
   background: rgb(28,151,217);
   background: linear-gradient(107deg, rgba(28,151,217,1) 0%, rgba(28,172,217,1) 85%, rgba(28,148,217,1) 100%); 
@@ -373,10 +397,7 @@ header{
   color: yellow;
 }
 
-
-
 /* ====== Side Menu ====== */
-
 .side-menu .categories {
   border-radius: 5px 5px 0px 0px;
   background: white;
@@ -392,7 +413,7 @@ header{
 }
 
 .side-menu .categories .body {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .side-menu .list-group-item .dropdown-toggle{
@@ -422,17 +443,13 @@ header{
   float: right;
 }
 
-
-
 /* ====== Services ====== */
 .services .service {
   background: var(--white);
   border-radius: 5px;
 }
 
-
 /*====== Top Product ====== */
-
 .title_outer {
   position: relative;
 }
@@ -452,7 +469,6 @@ header{
   font-size: 2rem;
   font-weight: 700;
 }
-
 
 .owl-carousel img{
   height: 20vh;
@@ -608,8 +624,6 @@ header{
   justify-content: center;align-items: center;
 }
 
-
-
 .modal-header i:hover {
   color: var(--secondary);
 }
@@ -660,7 +674,37 @@ header{
   text-decoration: underline;
 }
 
+/* ==== Empty Cart ==== */
+.empty-cart,
+.empty-wishlist,
+.empty-order,
+.empty-shipping-address {
+  box-shadow: var(--box-shadow)
+}
 
+.empty-cart .img-wrap,
+.empty-wishlist .img-wrap,
+.empty-order .img-wrap,
+.empty-shipping-address .img-wrap {
+  border-radius: 50%;
+  width: 10rem;
+  background: #f7f2f2;  
+}
+
+.empty-cart .title,
+.empty-wishlist .title,
+.empty-order .title,
+.empty-shipping-address .title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.empty-cart .text,
+.empty-wishlist .text,
+.empty-order .text,
+.empty-shipping-address .text {
+  font-size: 1.5rem;
+}
 
 /* ====== footer ====== */
 .footer {
@@ -706,7 +750,6 @@ header{
   scale: 0;
 }
 
-
 .footer .third_footer .heading {
   font-size: 2rem;
   font-weight: 700;
@@ -723,40 +766,11 @@ header{
   border-radius: 5px;
 }
 
-/* .footer .third_footer .social-links i:hover {
-  background: var(--secondary);
-  color: var(--white);
-} */
-
 .footer .fifth_footer p {
   font-size: 12px;
 }
 
-
 @media only screen and (max-width: 991px) {
-  /* body > header > nav > div > button:hover,
-  body > header > nav > div > button:focus {
-    background-color: var(--primary);
-    outline: none;
-  } */
-
-  /* body > nav > div > button:hover #bar,
-  body > nav > div > button:focus #bar, 
-  body > nav > div > button #bar {
-    background-color: var(--primary);
-  } */
-
-  /* #navbarSupportedContent > ul {
-    margin: 1rem;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-  } */
-
-  /* #navbarSupportedContent > ul > li:nth-child(n) > a {
-    padding: 10px 0;
-  } */
-
   .side-menu .categories .head #close-btn {
     display: none;
   }
@@ -771,7 +785,7 @@ header{
     height: 30vw;
   }
 
-    /* ====== Owl Carousel ====== */
+  /* ====== Owl Carousel ====== */
   .owl-carousel img {
     height: 40vh;
   }
@@ -789,12 +803,8 @@ header{
   }
 }
 
-
-
 /* media queries  */
-
 @media (max-width:991px){
-
   html{
       font-size: 55%;
   }
@@ -806,11 +816,9 @@ header{
   section{
       padding:2rem;
   }
-
 }
 
 @media (max-width:768px){
-
   #menu-btn{
       display: inline-block;
   }
@@ -820,39 +828,36 @@ header{
   }
 
   .header .navbar{
-      position: absolute;
-      top:110%; right:-110%;
-      width:20rem;
-      box-shadow: var(--box-shadow);
-      border-radius: .5rem;
-      background: #fff;
+    position: absolute;
+    top:110%; right:-110%;
+    width:20rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
   }
 
   .header .navbar.active{
-      right:2rem;
-      transition: .4s linear;
+    right:2rem;
+    transition: .4s linear;
   }
 
   .header .navbar a{
-      font-size: 2rem;
-      margin:2rem 2.5rem;
-      display: block;
+    font-size: 2rem;
+    margin:2rem 2.5rem;
+    display: block;
   }
-
 }
 
 @media (max-width:450px){
-
   html{
-      font-size: 50%;
+    font-size: 50%;
   }
 
   .heading{
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .footer{
-      text-align: center;
+    text-align: center;
   }
-
 }
