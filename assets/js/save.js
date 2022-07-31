@@ -16,3 +16,24 @@ for (option of options) {
     inputfield.placeholder = `Search in ${selectText.innerHTML}`
   }
 }
+
+
+// ====== Side Menu on index.html ======
+// let sideSubmenu = document.getElementById("side-submenu");
+// let openBtn = document.getElementById("open-btn");
+// let closeBtn = document.getElementById("close-btn");
+
+
+
+
+// openBtn.addEventListener('click', openmenu = () => {
+//   sideSubmenu.style.display="block";
+//   openBtn.style.display="none";
+//   closeBtn.style.display="block";
+// })
+
+// closeBtn.addEventListener('click', closemenu = () => {
+//   sideSubmenu.style.display="none";
+//   openBtn.style.display="block";
+//   closeBtn.style.display="none";
+// })

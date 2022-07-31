@@ -398,7 +398,8 @@ header{
 }
 
 .breadcrumb-item.active {
-  color: yellow;
+  font-weight: 600;
+  color: var(--white);
 }
 
 /* ====== Side Menu ====== */
@@ -441,11 +442,11 @@ header{
   font-size: 1.7rem;
 }
 
-.side-menu i{
+/* .side-menu i{
   margin-top: 4px;
   margin-right: 8px;
   float: right;
-}
+} */
 
 /* ====== Services ====== */
 .services .service {

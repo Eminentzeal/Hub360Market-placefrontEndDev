@@ -45,7 +45,6 @@
               <a class="dropdown-item py-4" href="registration.html">Register</a>
               <a class="dropdown-item py-4" href="account.html">Profile</a>
               <a class="dropdown-item py-4" href="wishlist.html">Saved Items</a>
-              <a class="dropdown-item py-4" href="orders.html">Orders</a>
               <a class="dropdown-item py-4" href="">Logout</a>
             </div>
           </div>
@@ -141,10 +140,12 @@
       <section class="side-menu container my-4">
         <div class="row">
           <div class="col-lg-3 categories p-0">
-            <div class="head px-4 py-4 ">
-              <i id="menu-btn" onclick="openmenu()" class='fa fa-bars d-lg-none' style="color:#fff"></i>
-              <i id="close-btn" onclick="closemenu()" class='fa fa-times d-lg-none' style="color:#fff"></i>
-              <span>All category</span>
+            <div class="head px-4 py-4 d-flex align-items-center justify-content-between">
+              <div>All category</div>
+              <div>
+                <i id="open-btn" onclick="openmenu()" class='fa fa-bars d-lg-none' style="color:#fff"></i>
+                <i id="close-btn" onclick="closemenu()" class='fa fa-times d-lg-none' style="color:#fff"></i>
+              </div>
             </div>
     
             <div class="body" id="side-submenu">
