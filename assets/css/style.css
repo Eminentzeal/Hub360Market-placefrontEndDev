@@ -197,20 +197,24 @@ header{
   color:#fff;
 }
 
-.header .cart {
+.cartAmount {
   position: relative;
 }
 
-.header .cartAmount {
+.cartAmount:before {
+  content: attr(data-count);
   position: absolute;
-  top: -9px;
-  right: -6px;
+  top: -1rem;
+  right: -0.6rem;
   background: var(--secondary);
-  color: var(--white);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding: .5rem;
+  padding: .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: .5rem;
+  color: white;
 }
 
 #menu-btn{
