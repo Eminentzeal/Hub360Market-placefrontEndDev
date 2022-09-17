@@ -22,7 +22,7 @@
 }
 
 .login-form h3{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
@@ -30,7 +30,7 @@
 
 .login-form .box{
   width: 100%;
-  margin:.7rem 0;
+  margin:1rem 0;
   background:#eee;
   border-radius: .5rem;
   padding:1rem;

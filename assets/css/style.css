@@ -351,14 +351,15 @@ header{
 }
 
 .header .login-form h3{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--black);
+  font-weight: 600;
 }
 
 .header .login-form .box{
   width: 100%;
-  margin:.7rem 0;
+  margin:1rem 0;
   background:#eee;
   border-radius: .5rem;
   padding:1rem;
@@ -598,7 +599,7 @@ header{
 
 /* ====== Exclusives ====== */
 .exclusive{
-  background: url(/assets/img/exclu.jpg);
+  background: url(../img/exclu.jpg);
   background-size: cover;
   height: 50vh;
 }
@@ -653,21 +654,26 @@ header{
   font-weight: 600;
 }
 
-.modal#featuredQuickview i {
+.modal#featuredQuickview i,
+.modal#featuredAddtocart i {
   font-size: 1rem;
 }
 
-.modal#featuredQuickview input {
+.modal#featuredQuickview input,
+.modal#featuredAddtocart input {
   font-weight: 600;
   background: var(--body);
-  padding: 11px 8px 12px;
+  padding: 11px 0px 9px;
+  width: 6rem;
 }
 
-.modal#featuredQuickview input:focus {
+.modal#featuredQuickview input:focus,
+.modal#featuredAddtocart input:focus {
   outline: none;
 }
 
-.modal#featuredQuickview input[type=number]::-webkit-inner-spin-button {
+.modal#featuredQuickview input[type=number]::-webkit-inner-spin-button,
+.modal#featuredAddtocart input[type=number]::-webkit-inner-spin-button {
   appearance: none;
 }
 

@@ -101,11 +101,17 @@
 .wishlist .pro-price {
   font-weight: 600;
   font-size: 1.3rem;
+  color: var(--secondary);
 }
 
 .wishlist .list-group-item .button:hover {
   color: var(--white);
 }
+
+.wishlist .fas {
+  color: var(--secondary);
+}
+
 /* ==== Wishlist End ==== */
 
 /* ==== Change Password Start==== */
@@ -132,7 +138,7 @@
 .add-new-address-form .box,
 .edit-existing-address-form .box{
   width: 100%;
-  margin:.7rem 0;
+  margin:1rem 0;
   background:#eee;
   border-radius: .5rem;
   padding:1rem;
